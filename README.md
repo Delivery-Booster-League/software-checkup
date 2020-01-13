@@ -1,5 +1,9 @@
 # Software Checkup
 
+<p align="center">
+    <img src="https://media.giphy.com/media/3o6MbaYjCiZbA9RRza/giphy.gif">
+</p>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
 ## Development server
