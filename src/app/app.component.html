@@ -37,23 +37,29 @@
     
   </div>
 
-  <mat-vertical-stepper>
-      <ng-template matStepperIcon="edit">
-          <mat-icon>check</mat-icon>
-        </ng-template>
-      
-        <ng-template matStepperIcon="done">
-          <mat-icon>done_all</mat-icon>
-        </ng-template>
 
-        <mat-step *ngFor="let step of checklists[selectedCheckListId].steps; let isLast = last; index as i;">
-            <ng-template matStepLabel>{{step.libelle}}</ng-template>
-            {{step.desc}}
-            <div *ngIf="!isLast">
-                <button mat-raised-button matStepperNext color="primary" style="float: right;">Next</button>
-            </div>
-        </mat-step>
-  </mat-vertical-stepper>
+  <mat-tab-group>
+    <mat-tab *ngFor="let subpart of checklists[selectedCheckListId].subparts;" [label]="subpart.name">
+      <mat-vertical-stepper>
+        <ng-template matStepperIcon="edit">
+            <mat-icon>check</mat-icon>
+          </ng-template>
+        
+          <ng-template matStepperIcon="done">
+            <mat-icon>done_all</mat-icon>
+          </ng-template>
+  
+          <mat-step *ngFor="let step of subpart.steps; let isLast = last; index as i;">
+              <ng-template matStepLabel>{{step.libelle}}</ng-template>
+              {{step.desc}}
+              <div *ngIf="!isLast">
+                  <button mat-raised-button matStepperNext color="primary" style="float: right;">Next</button>
+              </div>
+          </mat-step>
+    </mat-vertical-stepper>
+    </mat-tab>
+  </mat-tab-group>
+  
 
   <!-- Footer -->
   <footer>

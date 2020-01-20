@@ -90,6 +90,8 @@ THE SOFTWARE.
 
 @angular/material/stepper
 
+@angular/material/tabs
+
 @angular/platform-browser
 MIT
 
