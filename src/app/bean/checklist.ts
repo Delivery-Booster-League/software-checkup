@@ -1,7 +1,5 @@
+import {Subpart} from './subpart'
 export class Checklist {
     title:string;
-    subparts:{
-      name:string;
-      steps:{libelle:string,desc: string}[];
-    }[]
+    subparts:Subpart[];
   }

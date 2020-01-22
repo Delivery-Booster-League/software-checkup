@@ -5,6 +5,7 @@
       "subparts": [
         {
           "name": "Front",
+          "completion": 0,
           "steps": [
             {
               "libelle": "Gestion des exceptions",
@@ -26,6 +27,7 @@
         },
         {
           "name": "Back",
+          "completion": 0,
           "steps": [
             {
               "libelle": "Gestion des exceptions",
@@ -52,6 +54,7 @@
       "subparts": [
         {
           "name": "Basic",
+          "completion": 0,
           "steps": [
             {
               "libelle": "Gestion des dépendances",
