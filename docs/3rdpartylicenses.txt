@@ -90,6 +90,8 @@ THE SOFTWARE.
 
 @angular/material/menu
 
+@angular/material/snack-bar
+
 @angular/material/stepper
 
 @angular/material/tabs

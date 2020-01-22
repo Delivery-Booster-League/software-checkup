@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChildren, QueryList } from '@angular/core';
+import {MatSnackBar} from '@angular/material/snack-bar';
 import { MatVerticalStepper } from '@angular/material';
 import { ChecklistService } from './service/checklist.service';
 import { Subpart } from './bean/subpart';
@@ -18,7 +19,7 @@ export class AppComponent implements OnInit {
   @ViewChildren(MatVerticalStepper) steppers: QueryList<MatVerticalStepper>;
 
 
-  constructor(private checklistService: ChecklistService) { }
+  constructor(private checklistService: ChecklistService, private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
     this.checklists.forEach(checklist => {
@@ -27,6 +28,11 @@ export class AppComponent implements OnInit {
       });
     });
   }
+
+  openSnackBar() {
+    let snackBarRef = this._snackBar.open('All checked, nice!','dismiss',{duration: 4000  });
+  }
+
   setSelectedCheckList(id: number) {
     this.completion = 0;
     this.selectedCheckListId = id;
@@ -46,6 +52,9 @@ export class AppComponent implements OnInit {
 
   updateCompletion(subpart: Subpart) {
     this.completion = subpart.steps.filter(x => x.isdone).length / subpart.steps.length * 100;
+    if(subpart.steps.filter(x => x.isdone).length === subpart.steps.length){
+      this.openSnackBar();
+    }
   }
 
   tabChange() {
