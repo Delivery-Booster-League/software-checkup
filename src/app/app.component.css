@@ -6,7 +6,7 @@
   display: flex;
   margin: 32px auto;
   padding: 0 16px;
-  width: 960px;
+  max-width: 960px;
   flex-direction: column;
   align-items: center;
 }
@@ -87,4 +87,32 @@ mat-card-actions{
   float: right;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .content{
+    display: inline;
+  }
+  #rocket{
+    margin-top: 3px;
+    width: 10%; height: auto;
+  }
+  h2{
+    float: right;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 16px;
+  }
+  mat-vertical-stepper{
+    grid-column: 1 / 6;
+  }
+  .percent{
+    float: right;
+    align-self: right;
+    justify-self: top;
+    grid-row: 2;
+    font-size: 50px;
+  }
+
 }
