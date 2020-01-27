@@ -8,9 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Publish changes to github pages
 
-Run `ng build --prod --output-path docs --base-href software-checkup`  
-Make a copy of `docs/index.html` and name it `docs/404.html`.  
-Commit your changes and push
+Run `npm run pages`  
+Commit your changes and push to master
 
 
 ## Development server
