@@ -1,6 +1,61 @@
 {
   "CHECKLISTS": [
     {
+      "title": "Definition of done",
+      "subparts": [
+        {
+          "name": "Définition of done (API)",
+          "completion": 0,
+          "steps": [
+            {
+              "libelle": "Sonar passant (vert)",
+              "desc": ""
+            },
+            {
+              "libelle": "Pas d'erreur de test dans le job (de toute façon ça bloque les releases)",
+              "desc": ""
+            },
+            {
+              "libelle": "Pas de config en dur ciblant des environnements côté serveur",
+              "desc": ""
+            },
+            {
+              "libelle": "Pas de profil de config d'environnement",
+              "desc": ""
+            },
+            {
+              "libelle": "Pas de modification d'endpoint (type retour, chemin, ajout de param requis, suppression de param)",
+              "desc": ""
+            },
+            {
+              "libelle": "Que les sécurités de endpoints soient bien posées (Admin et ou user et pas de 'or not Authentificated')",
+              "desc": ""
+            },
+            {
+              "libelle": "Readme renseigné sur les evols",
+              "desc": ""
+            },
+            {
+              "libelle": "Tests pour les nouvelles APIs",
+              "desc": ""
+            },
+            {
+              "libelle": "Washer passant",
+              "desc": ""
+            },
+            {
+              "libelle": "Documentation swagger à jour (soit en annotations sur les endpoints, soit dans le swagger.yaml)",
+              "desc": ""
+            },
+            {
+              "libelle": "Pas de dépendances SNAPSHOT",
+              "desc": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "Architecture applicative",
       "subparts": [
         {
