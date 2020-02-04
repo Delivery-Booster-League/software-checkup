@@ -12,6 +12,7 @@
 }
 
 h2{
+  margin-top:0px;
   font-size: 40px;
 	font-weight: 300;
 	letter-spacing: -0.5px;
@@ -88,7 +89,11 @@ mat-card-actions{
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
+#rocket{
+  /*logo ratio : 1912-1714*/
+  width: 250px;
+  height: 250px;
+}
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
   .content{
