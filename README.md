@@ -1,8 +1,8 @@
-# [Software Checkup](https://delivery-booster-league.github.io/software-checkup/)
-
 <p align="center">
-    <img src="https://media.giphy.com/media/3o6MbaYjCiZbA9RRza/giphy.gif">
-</p>
+    <img width=250 src="https://github.com/Delivery-Booster-League/software-checkup/blob/master/src/assets/dbl-logo.png">
+</p>  
+
+# [Software Checkup](https://delivery-booster-league.github.io/software-checkup/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
@@ -40,4 +40,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <p align="center">
     <img src="https://i.imgur.com/McPBonx.png">
+</p>  
+
+<p align="center">
+    <img src="https://media.giphy.com/media/3o6MbaYjCiZbA9RRza/giphy.gif">
 </p>
