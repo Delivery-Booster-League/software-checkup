@@ -52,6 +52,76 @@
               "desc": ""
             }
           ]
+        },
+        {
+          "name": "User Story - TDD style",
+          "completion": 100,
+          "steps": [
+            {
+              "libelle": "Toutes les exigences fonctionnelles sont testées unitairement",
+              "desc": "Toutes les règles de gestion doivent être testées, avec tous les cas fonctionnels inhérents. Les données de tests doivent être externalisées et aisément modifiables (BDD ou fichier)."
+            },
+            {
+              "libelle": "La fonctionnalité est développée",
+              "desc": "La fonctionnalité est achevée lorsqu'elle répond à toutes les exigences de la spécification et que tous les tests fonctionnels sont passants."
+            },
+            {
+              "libelle": "Toutes les méthodes utilitaires sont testées",
+              "desc": "Toutes les méthodes utilitaires (parsing date, parsing fichier, parsing chaines...) doivent être externalisées et testées."
+            },
+            {
+              "libelle": "Tous les messages applicatifs affichés à l'utilisateur sont externalisés",
+              "desc": "Tous les messages applicatifs susceptibles d'être affichés à l'utilisateur doivent être externalisés dans des fichiers d'internationalisation (i18n). ex: messages_fr_fr.properties"
+            },
+            {
+              "libelle": "(Bonus) Toutes les traces applicatives sont externalisées",
+              "desc": "On pourra considérer comme un agrément appréciable que toutes les traces applicatives soient également externalisées dans des fichiers i18n, lorsqu'elles diffèrent du message affiché à l'utilisateur."
+            },
+            {
+              "libelle": "La configuration applicative est externalisée",
+              "desc": "Toutes les propriétés susceptibles de varier régulièrement doivent être définies en dehors du code source pour éviter des recherches fastidieuses à chaque mise à jour. Ex : Externalisation dans le POM Maven via des profils."
+            },
+            {
+              "libelle": "Le projet compile",
+              "desc": "Toutes les étapes de construction du projet doivent s'exécuter correctement, y compris les tests. Le temps de compilation ne doit pas excéder 10 minutes (Temps défini par l'équipe)."
+            },
+            {
+              "libelle": "Le projet se déploie correctement sur les environnements",
+              "desc": ""
+            },
+            {
+              "libelle": "Pas de profil de config d'environnement",
+              "desc": ""
+            },
+            {
+              "libelle": "Pas de modification d'endpoint (type retour, chemin, ajout de param requis, suppression de param)",
+              "desc": ""
+            },
+            {
+              "libelle": "Que les sécurités de endpoints soient bien posées (Admin et ou user et pas de 'or not Authentificated')",
+              "desc": ""
+            },
+            {
+              "libelle": "Readme renseigné sur les evols",
+              "desc": ""
+            },
+            {
+              "libelle": "Tests pour les nouvelles APIs",
+              "desc": ""
+            },
+            {
+              "libelle": "Washer passant",
+              "desc": ""
+            },
+            {
+              "libelle": "Documentation swagger à jour (soit en annotations sur les endpoints, soit dans le swagger.yaml)",
+              "desc": ""
+            },
+            {
+              "libelle": "Pas de dépendances SNAPSHOT",
+              "desc": ""
+            }
+          ]
         }
       ]
     },
