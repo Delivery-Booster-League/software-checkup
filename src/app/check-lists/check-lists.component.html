@@ -1,0 +1,42 @@
+<div class="content" role="main">
+    <mat-form-field class="select-checklist">
+        <mat-label>Selected checklist</mat-label>
+        <mat-select (selectionChange)="resetAllCompletion()" [(value)]="selectedCheckListId">
+          <mat-option *ngFor="let checklist of checklists; index as i;" [value]="i">{{checklist.title}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-card>
+      <mat-tab-group (selectedTabChange)="resetAllCompletion()">
+        <mat-tab *ngFor="let subpart of checklists[selectedCheckListId].subparts; index as indexTab"
+          [label]="subpart.name">
+          <div class="wrapper">
+            <mat-vertical-stepper #stepper>
+              <ng-template matStepperIcon="edit">
+                <mat-icon>clear</mat-icon>
+              </ng-template>
+              <mat-step *ngFor="let step of subpart.steps; let isLast = last; index as i;">
+                <ng-template matStepLabel>{{step.libelle}}</ng-template>
+                {{step.desc}}
+                <button class="done-button" mat-raised-button color="primary" color="primary"
+                  (click)="setStepComplete(subpart,step,indexTab)">
+                  done
+                  <mat-icon>done</mat-icon>
+                </button>
+              </mat-step>
+              <mat-step>
+                <ng-template matStepLabel>All done !</ng-template>
+  
+              </mat-step>
+            </mat-vertical-stepper>
+            <mat-card-actions>
+              <button (click)="stepper.reset();resetCompletion(subpart)" mat-button>RESET</button>
+            </mat-card-actions>
+            <div class="percent">
+              <span>{{completion| number:'1.0-0'}}%</span>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
+</div>

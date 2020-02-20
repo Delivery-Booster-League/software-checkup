@@ -2,22 +2,6 @@
   flex: 1 1 auto;
 }
 
-.content {
-  display: flex;
-  margin: 32px auto;
-  padding: 0 16px;
-  max-width: 960px;
-  flex-direction: column;
-  align-items: center;
-}
-
-h2{
-  margin-top:0px;
-  font-size: 40px;
-	font-weight: 300;
-	letter-spacing: -0.5px;
-}
-
 footer {
   margin-top: 8px;
   display: flex;
@@ -56,68 +40,8 @@ footer a {
   margin-right: 4px;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(20px, auto);
-}
-
-mat-vertical-stepper{
-  grid-column: 1 / 5;
-  grid-row: 1;
-}
-
-.percent{
-  align-self: center;
-  justify-self: center;
-  grid-column: 5 / 5;
-  grid-row: 1;
-  font-size: 70px;
-  font-weight: 300;
-}
-
-mat-card-actions{
-  grid-column: 1 / 6;
-  grid-row: 2;
-  align-self: center;
-  justify-self: center;
-}
-
-.done-button{
-  float: right;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
 #rocket{
   /*logo ratio : 1912-1714*/
   width: 250px;
   height: 250px;
-}
-/* Responsive Styles */
-@media screen and (max-width: 767px) {
-  .content{
-    display: inline;
-  }
-  #rocket{
-    margin-top: 3px;
-    width: 10%; height: auto;
-  }
-  h2{
-    float: right;
-    margin-top: 10px;
-    font-size: 20px;
-    margin-right: 16px;
-  }
-  mat-vertical-stepper{
-    grid-column: 1 / 6;
-  }
-  .percent{
-    float: right;
-    align-self: right;
-    justify-self: top;
-    grid-row: 2;
-    font-size: 50px;
-  }
-
 }

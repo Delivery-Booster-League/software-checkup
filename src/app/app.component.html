@@ -1,76 +1,8 @@
 <mat-toolbar color="primary">
-  <span>Software Checkup</span>
+  <span routerLink="/landing">Software Checkup</span>
   <span class="navbar-spacer"></span>
-  <mat-menu #appMenu="matMenu">
-    <button *ngFor="let checklist of checklists; index as i;" mat-menu-item
-      (click)="setSelectedCheckList(i)">{{checklist.title}}</button>
-  </mat-menu>
-
-  <button mat-button [matMenuTriggerFor]="appMenu">
-    choose checklist
-  </button>
+  <button mat-button routerLink="/bookmarks">Liens favoris</button>
+  <button mat-button routerLink="/check-lists">Les checklists</button>
 </mat-toolbar>
 
-
-<div class="content" role="main">
-
-  <img id="rocket" alt="Rocket Ship" src="assets/dbl-logo.png"/>
-
-
-  <h2>{{checklists[selectedCheckListId].title}}</h2>
-
-
-  <mat-card>
-    <mat-tab-group (selectedTabChange)="tabChange()">
-      <mat-tab *ngFor="let subpart of checklists[selectedCheckListId].subparts; index as indexTab"
-        [label]="subpart.name">
-        <div class="wrapper">
-          <mat-vertical-stepper #stepper>
-            <ng-template matStepperIcon="edit">
-              <mat-icon>clear</mat-icon>
-            </ng-template>
-            <mat-step *ngFor="let step of subpart.steps; let isLast = last; index as i;">
-              <ng-template matStepLabel>{{step.libelle}}</ng-template>
-              {{step.desc}}
-              <button class="done-button" mat-raised-button color="primary" color="primary"
-                (click)="setStepComplete(subpart,step,indexTab)">
-                done
-                <mat-icon>done</mat-icon>
-              </button>
-            </mat-step>
-            <mat-step>
-              <ng-template matStepLabel>All done !</ng-template>
-
-            </mat-step>
-          </mat-vertical-stepper>
-          <mat-card-actions>
-            <button (click)="stepper.reset();resetCompletion(subpart)" mat-button>RESET</button>
-          </mat-card-actions>
-          <div class="percent">
-            <span>{{completion| number:'1.0-0'}}%</span>
-          </div>
-        </div>
-      </mat-tab>
-    </mat-tab-group>
-  </mat-card>
-
-
-
-  <footer>
-    Like this app?&nbsp;
-    <a href="https://github.com/Delivery-Booster-League/software-checkup" target="_blank" rel="noopener"> Give our repo
-      a star.
-      <div class="github-star-badge">
-        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-        Star
-      </div>
-    </a>
-    <a href="https://github.com/Delivery-Booster-League/software-checkup" target="_blank" rel="noopener">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#1976d2" />
-        <path d="M0 0h24v24H0z" fill="none" /></svg>
-    </a>
-  </footer>
-</div>
+<router-outlet></router-outlet>
