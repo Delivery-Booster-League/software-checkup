@@ -1,3 +1,4 @@
+
 .bg-image {
     background: url('../../assets/bg-3.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -34,7 +35,7 @@
   .highlight {
     color:#80cbc4;
   }
-  button{
+  #big-button{
     grid-column: 1 / span 2;
     align-self: center;
     text-align: center;
@@ -63,6 +64,54 @@
     align-self: center;
     justify-self: center;
 }
+#desc{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 32px auto;
+    max-width: 960px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    grid-column: 1 / span 3;
+}
+p{
+    grid-column: 1 / span 3;
+}
+#activity-container{
+    grid-column: 1 / span 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+
+}
+
+#pour-les-projet{
+    grid-column: 1;
+}
+#pour-les-ressources{
+    grid-column: 2;
+}
+#pour-l-entite{
+    grid-column: 3;
+}
+#footer{
+    padding-right: 45%;
+    padding-left: 45%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+#footer a{
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+}
+#github-logo{
+    width: 20px;
+}
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
     .content {
@@ -82,7 +131,7 @@
         grid-column: 1;
         grid-row:1
     }
-    button{
+    #big-button{
         grid-column: 1;
         width: 300px;
         height: 70px;
@@ -90,5 +139,18 @@
     }
     #rocket{
         width: 40%; height: auto;
-      }
+    }
+    #activity-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #pour-les-projet{
+        grid-column: 1 / span 3;
+    }
+    #pour-les-ressources{
+        grid-column: 1 / span 3;
+    }
+    #pour-l-entite{
+        grid-column: 1 / span 3;
+    }
   }

@@ -3,8 +3,110 @@
     <h1>DELIVERY BOOSTER LEAGUE <span class='highlight'>DBL</span>.<br>
         QUI SOMMES <span class='highlight'>NOUS</span>?</h1>
     <img id="rocket" alt="Rocket Ship" src="assets/dbl-logo.png"/>
-    <button mat-button class='highlight'>
+    <button id="big-button" mat-button class='highlight' (click)="scrollToDesc()">
                   En savoir plus
-                  <mat-icon>info</mat-icon>
+                  <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
 </div>
+<div id="desc">
+    <h2>Qui sommes-nous ?</h2>
+    <p>La DBL est une équipe FS transverse ayant pour objectif de partager l’expertise de ses membres à l’ensemble des projets.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>Les activités de la Delivery Booster League</h2>
+    <div id="activity-container">
+        <mat-card>
+            <mat-card-header>
+              <mat-card-title>CONSULTING</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-list role="list">
+                    <mat-list-item role="listitem">Audit technique</mat-list-item>
+                    <mat-list-item role="listitem">Participation aux avant-ventes</mat-list-item>
+                    <mat-list-item role="listitem">Conseil : bonnes pratiques, normes</mat-list-item>
+                  </mat-list>
+            </mat-card-content>
+        </mat-card>
+        <mat-card>
+            <mat-card-header>
+              <mat-card-title>EXPERTISE</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-list role="list">
+                    <mat-list-item role="listitem">Cadrage technique</mat-list-item>
+                    <mat-list-item role="listitem">Dossier d’architecture</mat-list-item>
+                    <mat-list-item role="listitem">Intervention ponctuelle sur projet</mat-list-item>
+                  </mat-list>
+            </mat-card-content>
+        </mat-card>
+        <mat-card>
+            <mat-card-header>
+              <mat-card-title>PaaS : Production Line</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-list role="list">
+                    <mat-list-item role="listitem">Services d’intégration continue</mat-list-item>
+                    <mat-list-item role="listitem">Services d’automatisation</mat-list-item>
+                  </mat-list>
+            </mat-card-content>
+        </mat-card>
+        <mat-card>
+            <mat-card-header>
+              <mat-card-title>ACCOMPAGNEMENT</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-list role="list">
+                    <mat-list-item role="listitem">Formation & Veille technologique</mat-list-item>
+                    <mat-list-item role="listitem">Entretien technique</mat-list-item>
+                    <mat-list-item role="listitem">Support technique aux projets</mat-list-item>
+                  </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <h2>Les gains espérés</h2>
+    <mat-card id="pour-les-projet">
+        <mat-card-header>
+          <mat-card-title>Pour les projets</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-list role="list">
+                <mat-list-item role="listitem">Flexibilité dans la gestion des ressources</mat-list-item>
+                <mat-list-item role="listitem">Cohérence des pratiques</mat-list-item>
+                <mat-list-item role="listitem">Qualité et sécurisation du delivery</mat-list-item>
+                <mat-list-item role="listitem">Amélioration continue</mat-list-item>
+                <mat-list-item role="listitem">Apport de valeur pour les clients</mat-list-item>
+              </mat-list>
+        </mat-card-content>
+      </mat-card>
+      <mat-card id="pour-les-ressources">
+        <mat-card-header>
+          <mat-card-title>Pour les ressources</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-list role="list">
+                <mat-list-item role="listitem">Plus de valeur ajoutée</mat-list-item>
+                <mat-list-item role="listitem">Modernisation des stacks techniques</mat-list-item>
+                <mat-list-item role="listitem">Plus d’accompagnement</mat-list-item>
+                <mat-list-item role="listitem">Plus de collaboration</mat-list-item>
+              </mat-list>
+        </mat-card-content>
+      </mat-card>
+      <mat-card id="pour-l-entite">
+        <mat-card-header>
+          <mat-card-title>Pour l’entité</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-list role="list">
+                <mat-list-item role="listitem">Rétention des ressources</mat-list-item>
+                <mat-list-item role="listitem">Fiabilisation des marges</mat-list-item>
+                <mat-list-item role="listitem">Moins de silos projets / mutualisation des coûts</mat-list-item>
+                <mat-list-item role="listitem">Reconnaissance en tant qu’acteur de la transformation</mat-list-item>
+                <mat-list-item role="listitem">Innovation</mat-list-item>
+              </mat-list>
+        </mat-card-content>
+      </mat-card>
+</div>
+<mat-toolbar id="footer" color="primary">
+    <a mat-raised-button target="_blank" href="https://github.com/Delivery-Booster-League/software-checkup">Github de l'application  <img id="github-logo" src="assets/GitHub-Mark-32px.png"/></a>
+</mat-toolbar>

@@ -11,5 +11,8 @@ export class LandingComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  scrollToDesc(): void {
+    const element = document.querySelector("#desc")
+    if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 }

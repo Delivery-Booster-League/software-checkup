@@ -95,6 +95,8 @@ THE SOFTWARE.
 
 @angular/material/icon
 
+@angular/material/list
+
 @angular/material/select
 
 @angular/material/snack-bar

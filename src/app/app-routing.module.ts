@@ -7,10 +7,9 @@ import { LandingComponent } from './landing/landing.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/landing', pathMatch: 'full' },
   { path: 'bookmarks', component: BookmarksComponent },
   { path: 'check-lists', component: CheckListsComponent },
-  { path: 'landing', component: LandingComponent }
+  { path: '', component: LandingComponent }
 ];
 
 @NgModule({

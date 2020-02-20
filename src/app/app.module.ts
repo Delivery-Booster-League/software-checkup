@@ -13,6 +13,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSelectModule} from '@angular/material/select';
+import {MatListModule} from '@angular/material/list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
@@ -40,6 +41,7 @@ import { LandingComponent } from './landing/landing.component';
     MatCardModule,
     MatSnackBarModule,
     MatSelectModule,
+    MatListModule,
     AppRoutingModule
     
   ],
