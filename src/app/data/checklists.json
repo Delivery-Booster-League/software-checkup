@@ -1,5 +1,7 @@
 {
-  "CHECKLISTS": [
+  "CHECKLISTS": [{
+    "title": "User Story",
+    "subparts": [
     {
       "name": "User Story - TDD style",
       "completion": 100,
@@ -61,7 +63,8 @@
           "desc": "Les équipes de recette ou les tests automatisés ont permis de valider le fonctionnement de l'application"
         }
       ]
-    },
+    }
+    ]},
     {
       "title": "Definition of done",
       "subparts": [
