@@ -76,9 +76,13 @@ h2{
     font-weight: 300;
     letter-spacing: -0.5px;
     grid-column: 1 / span 3;
+    margin-top:0px;
+    margin-bottom: 0px;
 }
 p{
     grid-column: 1 / span 3;
+    margin-top:0px;
+    margin-bottom: 0px;
 }
 #activity-container{
     grid-column: 1 / span 3;
@@ -96,21 +100,6 @@ p{
 }
 #pour-l-entite{
     grid-column: 3;
-}
-#footer{
-    padding-right: 45%;
-    padding-left: 45%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-
-}
-#footer a{
-    align-self: center;
-    text-align: center;
-    justify-self: center;
-}
-#github-logo{
-    width: 20px;
 }
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
@@ -143,6 +132,7 @@ p{
     #activity-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        padding: 0 16px;
     }
     #pour-les-projet{
         grid-column: 1 / span 3;
