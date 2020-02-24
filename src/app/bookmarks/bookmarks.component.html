@@ -1,4 +1,14 @@
 <div class="content" role="main">
-    <p>bookmarks works!</p>
+    <div class="componant-title">
+        <h1>Liens favoris de la DBL</h1>
+        <h2>Récupéré depuis twitter</h2>
+    </div>
+    <mat-card *ngFor="let bookmark of bookmarks; index as i;" class="example-card">
+        <mat-card-header>
+          <mat-card-title [innerHTML]="bookmark._source.text | linkify"></mat-card-title>
+          <mat-card-subtitle>{{bookmark._source.user.screen_name}}</mat-card-subtitle>
+          <p>{{bookmark._source.created_at | date}}</p>
+        </mat-card-header>
+      </mat-card>
 </div>
 

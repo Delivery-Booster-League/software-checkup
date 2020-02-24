@@ -1,0 +1,1335 @@
+{
+    "DATA":
+
+    {
+        "took" : 1122,
+        "timed_out" : false,
+        "_shards" : {
+          "total" : 1,
+          "successful" : 1,
+          "skipped" : 0,
+          "failed" : 0
+        },
+        "hits" : {
+          "total" : {
+            "value" : 10,
+            "relation" : "eq"
+          },
+          "max_score" : 1.0,
+          "hits" : [
+            {
+              "_index" : "twitter",
+              "_type" : "tweet",
+              "_id" : "gu30U3ABcmgga_gSIvPe",
+              "_score" : 1.0,
+              "_source" : {
+                "coordinates" : null,
+                "is_quote_status" : false,
+                "reply_count" : 0,
+                "retweeted" : false,
+                "timestamp_ms" : "1581956464962",
+                "id_str" : "1229440639273754624",
+                "user" : {
+                  "is_translator" : false,
+                  "profile_text_color" : "000000",
+                  "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+                  "following" : null,
+                  "screen_name" : "Antho85180",
+                  "id_str" : "2396197062",
+                  "profile_background_tile" : false,
+                  "url" : null,
+                  "followers_count" : 40,
+                  "listed_count" : 1,
+                  "profile_sidebar_border_color" : "000000",
+                  "location" : null,
+                  "contributors_enabled" : false,
+                  "description" : null,
+                  "protected" : false,
+                  "geo_enabled" : false,
+                  "utc_offset" : null,
+                  "profile_link_color" : "94D487",
+                  "favourites_count" : 392,
+                  "profile_background_color" : "000000",
+                  "translator_type" : "none",
+                  "lang" : null,
+                  "profile_sidebar_fill_color" : "000000",
+                  "profile_use_background_image" : false,
+                  "profile_image_url" : "http://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "profile_image_url_https" : "https://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "notifications" : null,
+                  "default_profile_image" : false,
+                  "friends_count" : 166,
+                  "profile_banner_url" : "https://pbs.twimg.com/profile_banners/2396197062/1450292177",
+                  "default_profile" : false,
+                  "created_at" : "Tue Mar 18 13:16:18 +0000 2014",
+                  "id" : 2396197062,
+                  "follow_request_sent" : null,
+                  "time_zone" : null,
+                  "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+                  "verified" : false,
+                  "name" : "Anthony85",
+                  "statuses_count" : 593
+                },
+                "quote_count" : 0,
+                "entities" : {
+                  "urls" : [ ],
+                  "symbols" : [ ],
+                  "hashtags" : [
+                    {
+                      "indices" : [
+                        6,
+                        15
+                      ],
+                      "text" : "dbooster"
+                    }
+                  ],
+                  "user_mentions" : [ ]
+                },
+                "geo" : null,
+                "filter_level" : "low",
+                "in_reply_to_status_id" : null,
+                "text" : "Tweet #dbooster",
+                "@version" : "1",
+                "contributors" : null,
+                "lang" : "en",
+                "@timestamp" : "2020-02-17T16:21:04.000Z",
+                "in_reply_to_screen_name" : null,
+                "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                "truncated" : false,
+                "favorited" : false,
+                "in_reply_to_user_id" : null,
+                "place" : null,
+                "retweet_count" : 0,
+                "created_at" : "Mon Feb 17 16:21:04 +0000 2020",
+                "id" : 1229440639273754624,
+                "in_reply_to_user_id_str" : null,
+                "in_reply_to_status_id_str" : null,
+                "favorite_count" : 0
+              }
+            },
+            {
+              "_index" : "twitter",
+              "_type" : "tweet",
+              "_id" : "g-0MVHABcmgga_gStvPx",
+              "_score" : 1.0,
+              "_source" : {
+                "coordinates" : null,
+                "is_quote_status" : false,
+                "reply_count" : 0,
+                "retweeted" : false,
+                "timestamp_ms" : "1581958078681",
+                "id_str" : "1229447407701839872",
+                "user" : {
+                  "is_translator" : false,
+                  "profile_text_color" : "333333",
+                  "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+                  "following" : null,
+                  "screen_name" : "adNNNNj",
+                  "id_str" : "3077649868",
+                  "profile_background_tile" : false,
+                  "url" : null,
+                  "followers_count" : 3,
+                  "listed_count" : 0,
+                  "profile_sidebar_border_color" : "C0DEED",
+                  "location" : null,
+                  "contributors_enabled" : false,
+                  "description" : null,
+                  "protected" : false,
+                  "geo_enabled" : false,
+                  "utc_offset" : null,
+                  "profile_link_color" : "1DA1F2",
+                  "favourites_count" : 107,
+                  "profile_background_color" : "C0DEED",
+                  "translator_type" : "none",
+                  "lang" : null,
+                  "profile_sidebar_fill_color" : "DDEEF6",
+                  "profile_use_background_image" : true,
+                  "profile_image_url" : "http://pbs.twimg.com/profile_images/808986058184622080/UxGSq9ER_normal.jpg",
+                  "profile_image_url_https" : "https://pbs.twimg.com/profile_images/808986058184622080/UxGSq9ER_normal.jpg",
+                  "notifications" : null,
+                  "default_profile_image" : false,
+                  "friends_count" : 57,
+                  "default_profile" : true,
+                  "created_at" : "Sat Mar 07 16:40:48 +0000 2015",
+                  "id" : 3077649868,
+                  "follow_request_sent" : null,
+                  "time_zone" : null,
+                  "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+                  "verified" : false,
+                  "name" : "Dan GEFFROY",
+                  "statuses_count" : 17
+                },
+                "quote_count" : 0,
+                "entities" : {
+                  "urls" : [ ],
+                  "symbols" : [ ],
+                  "hashtags" : [
+                    {
+                      "indices" : [
+                        21,
+                        30
+                      ],
+                      "text" : "dbooster"
+                    }
+                  ],
+                  "user_mentions" : [
+                    {
+                      "id" : 2396197062,
+                      "screen_name" : "Antho85180",
+                      "id_str" : "2396197062",
+                      "name" : "Anthony85",
+                      "indices" : [
+                        3,
+                        14
+                      ]
+                    }
+                  ]
+                },
+                "geo" : null,
+                "filter_level" : "low",
+                "in_reply_to_status_id" : null,
+                "text" : "RT @Antho85180: Test #dbooster",
+                "@version" : "1",
+                "contributors" : null,
+                "lang" : "en",
+                "@timestamp" : "2020-02-17T16:47:58.000Z",
+                "in_reply_to_screen_name" : null,
+                "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                "truncated" : false,
+                "favorited" : false,
+                "in_reply_to_user_id" : null,
+                "place" : null,
+                "retweet_count" : 0,
+                "created_at" : "Mon Feb 17 16:47:58 +0000 2020",
+                "id" : 1229447407701839872,
+                "retweeted_status" : {
+                  "coordinates" : null,
+                  "is_quote_status" : false,
+                  "reply_count" : 0,
+                  "retweeted" : false,
+                  "id_str" : "1228356348192133120",
+                  "user" : {
+                    "is_translator" : false,
+                    "profile_text_color" : "000000",
+                    "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "following" : null,
+                    "screen_name" : "Antho85180",
+                    "id_str" : "2396197062",
+                    "profile_background_tile" : false,
+                    "url" : null,
+                    "followers_count" : 40,
+                    "listed_count" : 1,
+                    "profile_sidebar_border_color" : "000000",
+                    "location" : null,
+                    "contributors_enabled" : false,
+                    "description" : null,
+                    "protected" : false,
+                    "geo_enabled" : false,
+                    "utc_offset" : null,
+                    "profile_link_color" : "94D487",
+                    "favourites_count" : 392,
+                    "profile_background_color" : "000000",
+                    "translator_type" : "none",
+                    "lang" : null,
+                    "profile_sidebar_fill_color" : "000000",
+                    "profile_use_background_image" : false,
+                    "profile_image_url" : "http://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                    "profile_image_url_https" : "https://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                    "notifications" : null,
+                    "default_profile_image" : false,
+                    "friends_count" : 166,
+                    "profile_banner_url" : "https://pbs.twimg.com/profile_banners/2396197062/1450292177",
+                    "default_profile" : false,
+                    "created_at" : "Tue Mar 18 13:16:18 +0000 2014",
+                    "id" : 2396197062,
+                    "follow_request_sent" : null,
+                    "time_zone" : null,
+                    "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "verified" : false,
+                    "name" : "Anthony85",
+                    "statuses_count" : 593
+                  },
+                  "quote_count" : 0,
+                  "entities" : {
+                    "urls" : [ ],
+                    "symbols" : [ ],
+                    "hashtags" : [
+                      {
+                        "indices" : [
+                          5,
+                          14
+                        ],
+                        "text" : "dbooster"
+                      }
+                    ],
+                    "user_mentions" : [ ]
+                  },
+                  "geo" : null,
+                  "filter_level" : "low",
+                  "in_reply_to_status_id" : null,
+                  "text" : "Test #dbooster",
+                  "contributors" : null,
+                  "lang" : "en",
+                  "in_reply_to_screen_name" : null,
+                  "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                  "truncated" : false,
+                  "favorited" : false,
+                  "in_reply_to_user_id" : null,
+                  "place" : null,
+                  "retweet_count" : 1,
+                  "created_at" : "Fri Feb 14 16:32:29 +0000 2020",
+                  "id" : 1228356348192133120,
+                  "in_reply_to_user_id_str" : null,
+                  "in_reply_to_status_id_str" : null,
+                  "favorite_count" : 0
+                },
+                "in_reply_to_user_id_str" : null,
+                "in_reply_to_status_id_str" : null,
+                "favorite_count" : 0
+              }
+            },
+            {
+              "_index" : "twitter",
+              "_type" : "tweet",
+              "_id" : "hO0MVHABcmgga_gS3fO0",
+              "_score" : 1.0,
+              "_source" : {
+                "coordinates" : null,
+                "is_quote_status" : false,
+                "reply_count" : 0,
+                "retweeted" : false,
+                "timestamp_ms" : "1581958089033",
+                "id_str" : "1229447451121274880",
+                "user" : {
+                  "is_translator" : false,
+                  "profile_text_color" : "000000",
+                  "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+                  "following" : null,
+                  "screen_name" : "Antho85180",
+                  "id_str" : "2396197062",
+                  "profile_background_tile" : false,
+                  "url" : null,
+                  "followers_count" : 40,
+                  "listed_count" : 1,
+                  "profile_sidebar_border_color" : "000000",
+                  "location" : null,
+                  "contributors_enabled" : false,
+                  "description" : null,
+                  "protected" : false,
+                  "geo_enabled" : false,
+                  "utc_offset" : null,
+                  "profile_link_color" : "94D487",
+                  "favourites_count" : 392,
+                  "profile_background_color" : "000000",
+                  "translator_type" : "none",
+                  "lang" : null,
+                  "profile_sidebar_fill_color" : "000000",
+                  "profile_use_background_image" : false,
+                  "profile_image_url" : "http://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "profile_image_url_https" : "https://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "notifications" : null,
+                  "default_profile_image" : false,
+                  "friends_count" : 166,
+                  "profile_banner_url" : "https://pbs.twimg.com/profile_banners/2396197062/1450292177",
+                  "default_profile" : false,
+                  "created_at" : "Tue Mar 18 13:16:18 +0000 2014",
+                  "id" : 2396197062,
+                  "follow_request_sent" : null,
+                  "time_zone" : null,
+                  "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+                  "verified" : false,
+                  "name" : "Anthony85",
+                  "statuses_count" : 594
+                },
+                "quote_count" : 0,
+                "entities" : {
+                  "urls" : [ ],
+                  "symbols" : [ ],
+                  "hashtags" : [
+                    {
+                      "indices" : [
+                        11,
+                        20
+                      ],
+                      "text" : "dbooster"
+                    }
+                  ],
+                  "user_mentions" : [ ]
+                },
+                "geo" : null,
+                "filter_level" : "low",
+                "in_reply_to_status_id" : null,
+                "text" : "Test again #dbooster",
+                "@version" : "1",
+                "contributors" : null,
+                "lang" : "en",
+                "@timestamp" : "2020-02-17T16:48:09.000Z",
+                "in_reply_to_screen_name" : null,
+                "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                "truncated" : false,
+                "favorited" : false,
+                "in_reply_to_user_id" : null,
+                "place" : null,
+                "retweet_count" : 0,
+                "created_at" : "Mon Feb 17 16:48:09 +0000 2020",
+                "id" : 1229447451121274880,
+                "in_reply_to_user_id_str" : null,
+                "in_reply_to_status_id_str" : null,
+                "favorite_count" : 0
+              }
+            },
+            {
+              "_index" : "twitter",
+              "_type" : "tweet",
+              "_id" : "jK5jd3ABo6O_ZLjSD6aS",
+              "_score" : 1.0,
+              "_source" : {
+                "retweet_count" : 0,
+                "id" : 1231934049339498498,
+                "coordinates" : null,
+                "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                "user" : {
+                  "followers_count" : 6,
+                  "profile_use_background_image" : true,
+                  "verified" : false,
+                  "time_zone" : null,
+                  "profile_sidebar_fill_color" : "DDEEF6",
+                  "following" : null,
+                  "id" : 918517751148314629,
+                  "statuses_count" : 18,
+                  "profile_background_image_url" : "",
+                  "geo_enabled" : false,
+                  "profile_background_image_url_https" : "",
+                  "follow_request_sent" : null,
+                  "is_translator" : false,
+                  "profile_link_color" : "1DA1F2",
+                  "location" : null,
+                  "profile_background_color" : "F5F8FA",
+                  "screen_name" : "Toouuze",
+                  "default_profile" : true,
+                  "utc_offset" : null,
+                  "id_str" : "918517751148314629",
+                  "protected" : false,
+                  "profile_image_url_https" : "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                  "profile_background_tile" : false,
+                  "listed_count" : 0,
+                  "default_profile_image" : false,
+                  "description" : null,
+                  "translator_type" : "none",
+                  "url" : null,
+                  "favourites_count" : 548,
+                  "created_at" : "Thu Oct 12 16:44:31 +0000 2017",
+                  "friends_count" : 96,
+                  "contributors_enabled" : false,
+                  "profile_text_color" : "333333",
+                  "lang" : null,
+                  "profile_sidebar_border_color" : "C0DEED",
+                  "profile_image_url" : "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                  "name" : "TOUZE",
+                  "notifications" : null
+                },
+                "contributors" : null,
+                "quote_count" : 0,
+                "possibly_sensitive" : false,
+                "@timestamp" : "2020-02-24T13:29:00.000Z",
+                "favorited" : false,
+                "retweeted" : false,
+                "place" : null,
+                "in_reply_to_screen_name" : null,
+                "entities" : {
+                  "symbols" : [ ],
+                  "urls" : [
+                    {
+                      "url" : "https://t.co/u10hatckUK",
+                      "expanded_url" : "http://www.google.com",
+                      "display_url" : "google.com",
+                      "indices" : [
+                        15,
+                        38
+                      ]
+                    }
+                  ],
+                  "user_mentions" : [ ],
+                  "hashtags" : [
+                    {
+                      "text" : "dbooster",
+                      "indices" : [
+                        39,
+                        48
+                      ]
+                    }
+                  ]
+                },
+                "id_str" : "1231934049339498498",
+                "in_reply_to_status_id" : null,
+                "text" : "Beautiful link https://t.co/u10hatckUK\n#dbooster",
+                "is_quote_status" : false,
+                "reply_count" : 0,
+                "@version" : "1",
+                "timestamp_ms" : "1582550940247",
+                "in_reply_to_user_id_str" : null,
+                "in_reply_to_user_id" : null,
+                "geo" : null,
+                "filter_level" : "low",
+                "created_at" : "Mon Feb 24 13:29:00 +0000 2020",
+                "favorite_count" : 0,
+                "in_reply_to_status_id_str" : null,
+                "lang" : "en",
+                "truncated" : false
+              }
+            },
+            {
+              "_index" : "twitter",
+              "_type" : "tweet",
+              "_id" : "ja5jd3ABo6O_ZLjScKZS",
+              "_score" : 1.0,
+              "_source" : {
+                "retweet_count" : 0,
+                "id" : 1231934153807073280,
+                "coordinates" : null,
+                "source" : "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                "user" : {
+                  "followers_count" : 40,
+                  "profile_use_background_image" : false,
+                  "verified" : false,
+                  "time_zone" : null,
+                  "profile_sidebar_fill_color" : "000000",
+                  "following" : null,
+                  "id" : 2396197062,
+                  "statuses_count" : 594,
+                  "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+                  "geo_enabled" : false,
+                  "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+                  "follow_request_sent" : null,
+                  "is_translator" : false,
+                  "profile_link_color" : "94D487",
+                  "location" : null,
+                  "profile_background_color" : "000000",
+                  "screen_name" : "Antho85180",
+                  "default_profile" : false,
+                  "utc_offset" : null,
+                  "id_str" : "2396197062",
+                  "profile_banner_url" : "https://pbs.twimg.com/profile_banners/2396197062/1450292177",
+                  "protected" : false,
+                  "profile_image_url_https" : "https://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "profile_background_tile" : false,
+                  "listed_count" : 1,
+                  "default_profile_image" : false,
+                  "description" : null,
+                  "translator_type" : "none",
+                  "url" : null,
+                  "favourites_count" : 392,
+                  "created_at" : "Tue Mar 18 13:16:18 +0000 2014",
+                  "friends_count" : 166,
+                  "contributors_enabled" : false,
+                  "profile_text_color" : "000000",
+                  "lang" : null,
+                  "profile_sidebar_border_color" : "000000",
+                  "profile_image_url" : "http://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "name" : "Anthony85",
+                  "notifications" : null
+                },
+                "contributors" : null,
+                "quote_count" : 0,
+                "possibly_sensitive" : false,
+                "@timestamp" : "2020-02-24T13:29:25.000Z",
+                "favorited" : false,
+                "retweeted" : false,
+                "place" : null,
+                "in_reply_to_screen_name" : null,
+                "entities" : {
+                  "symbols" : [ ],
+                  "urls" : [
+                    {
+                      "url" : "https://t.co/3uHSItVp9S",
+                      "expanded_url" : "https://dog.ceo/dog-api/",
+                      "display_url" : "dog.ceo/dog-api/",
+                      "indices" : [
+                        29,
+                        52
+                      ]
+                    }
+                  ],
+                  "user_mentions" : [ ],
+                  "hashtags" : [
+                    {
+                      "text" : "dbooster",
+                      "indices" : [
+                        53,
+                        62
+                      ]
+                    }
+                  ]
+                },
+                "id_str" : "1231934153807073280",
+                "in_reply_to_status_id" : null,
+                "text" : "&gt; Ceci est un TWEET &lt;  https://t.co/3uHSItVp9S #dbooster",
+                "is_quote_status" : false,
+                "reply_count" : 0,
+                "@version" : "1",
+                "timestamp_ms" : "1582550965154",
+                "in_reply_to_user_id_str" : null,
+                "in_reply_to_user_id" : null,
+                "geo" : null,
+                "filter_level" : "low",
+                "created_at" : "Mon Feb 24 13:29:25 +0000 2020",
+                "favorite_count" : 0,
+                "in_reply_to_status_id_str" : null,
+                "lang" : "fr",
+                "truncated" : false
+              }
+            },
+            {
+              "_index" : "twitter",
+              "_type" : "tweet",
+              "_id" : "jq5pd3ABo6O_ZLjSTqbl",
+              "_score" : 1.0,
+              "_source" : {
+                "retweet_count" : 0,
+                "quoted_status" : {
+                  "retweet_count" : 10,
+                  "display_text_range" : [
+                    0,
+                    140
+                  ],
+                  "id" : 1220096575206240256,
+                  "coordinates" : null,
+                  "source" : "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+                  "user" : {
+                    "followers_count" : 978,
+                    "profile_use_background_image" : false,
+                    "verified" : false,
+                    "time_zone" : null,
+                    "profile_sidebar_fill_color" : "000000",
+                    "following" : null,
+                    "id" : 770616890062282753,
+                    "statuses_count" : 357,
+                    "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "geo_enabled" : true,
+                    "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "follow_request_sent" : null,
+                    "is_translator" : false,
+                    "profile_link_color" : "F69220",
+                    "location" : null,
+                    "profile_background_color" : "000000",
+                    "screen_name" : "pnpmjs",
+                    "default_profile" : false,
+                    "utc_offset" : null,
+                    "id_str" : "770616890062282753",
+                    "profile_banner_url" : "https://pbs.twimg.com/profile_banners/770616890062282753/1520557468",
+                    "protected" : false,
+                    "profile_image_url_https" : "https://pbs.twimg.com/profile_images/875481448517644288/JLVo_YPe_normal.jpg",
+                    "profile_background_tile" : false,
+                    "listed_count" : 22,
+                    "default_profile_image" : false,
+                    "description" : "Performant npm installations",
+                    "translator_type" : "none",
+                    "url" : "https://pnpm.js.org",
+                    "favourites_count" : 233,
+                    "created_at" : "Tue Aug 30 13:39:18 +0000 2016",
+                    "friends_count" : 2,
+                    "contributors_enabled" : false,
+                    "profile_text_color" : "000000",
+                    "lang" : null,
+                    "profile_sidebar_border_color" : "000000",
+                    "profile_image_url" : "http://pbs.twimg.com/profile_images/875481448517644288/JLVo_YPe_normal.jpg",
+                    "name" : "pnpm\uD83D\uDE80",
+                    "notifications" : null
+                  },
+                  "contributors" : null,
+                  "quote_count" : 1,
+                  "possibly_sensitive" : false,
+                  "favorited" : false,
+                  "retweeted" : false,
+                  "place" : null,
+                  "extended_tweet" : {
+                    "entities" : {
+                      "symbols" : [ ],
+                      "urls" : [ ],
+                      "media" : [
+                        {
+                          "id_str" : "1220096287384784896",
+                          "url" : "https://t.co/ksvns9DxNi",
+                          "media_url" : "http://pbs.twimg.com/media/EO6nG-lX0AAE0Gm.png",
+                          "expanded_url" : "https://twitter.com/pnpmjs/status/1220096575206240256/photo/1",
+                          "display_url" : "pic.twitter.com/ksvns9DxNi",
+                          "media_url_https" : "https://pbs.twimg.com/media/EO6nG-lX0AAE0Gm.png",
+                          "id" : 1220096287384784896,
+                          "indices" : [
+                            136,
+                            159
+                          ],
+                          "type" : "photo",
+                          "sizes" : {
+                            "large" : {
+                              "h" : 195,
+                              "resize" : "fit",
+                              "w" : 525
+                            },
+                            "small" : {
+                              "h" : 195,
+                              "resize" : "fit",
+                              "w" : 525
+                            },
+                            "medium" : {
+                              "h" : 195,
+                              "resize" : "fit",
+                              "w" : 525
+                            },
+                            "thumb" : {
+                              "h" : 150,
+                              "resize" : "crop",
+                              "w" : 150
+                            }
+                          }
+                        },
+                        {
+                          "id_str" : "1220096287414136832",
+                          "url" : "https://t.co/ksvns9DxNi",
+                          "media_url" : "http://pbs.twimg.com/media/EO6nG-sXsAAV_BJ.png",
+                          "expanded_url" : "https://twitter.com/pnpmjs/status/1220096575206240256/photo/1",
+                          "display_url" : "pic.twitter.com/ksvns9DxNi",
+                          "media_url_https" : "https://pbs.twimg.com/media/EO6nG-sXsAAV_BJ.png",
+                          "id" : 1220096287414136832,
+                          "indices" : [
+                            136,
+                            159
+                          ],
+                          "type" : "photo",
+                          "sizes" : {
+                            "large" : {
+                              "h" : 208,
+                              "resize" : "fit",
+                              "w" : 530
+                            },
+                            "small" : {
+                              "h" : 208,
+                              "resize" : "fit",
+                              "w" : 530
+                            },
+                            "medium" : {
+                              "h" : 208,
+                              "resize" : "fit",
+                              "w" : 530
+                            },
+                            "thumb" : {
+                              "h" : 150,
+                              "resize" : "crop",
+                              "w" : 150
+                            }
+                          }
+                        }
+                      ],
+                      "user_mentions" : [ ],
+                      "hashtags" : [ ]
+                    },
+                    "extended_entities" : {
+                      "media" : [
+                        {
+                          "id_str" : "1220096287384784896",
+                          "url" : "https://t.co/ksvns9DxNi",
+                          "media_url" : "http://pbs.twimg.com/media/EO6nG-lX0AAE0Gm.png",
+                          "expanded_url" : "https://twitter.com/pnpmjs/status/1220096575206240256/photo/1",
+                          "display_url" : "pic.twitter.com/ksvns9DxNi",
+                          "media_url_https" : "https://pbs.twimg.com/media/EO6nG-lX0AAE0Gm.png",
+                          "id" : 1220096287384784896,
+                          "indices" : [
+                            136,
+                            159
+                          ],
+                          "type" : "photo",
+                          "sizes" : {
+                            "large" : {
+                              "h" : 195,
+                              "resize" : "fit",
+                              "w" : 525
+                            },
+                            "small" : {
+                              "h" : 195,
+                              "resize" : "fit",
+                              "w" : 525
+                            },
+                            "medium" : {
+                              "h" : 195,
+                              "resize" : "fit",
+                              "w" : 525
+                            },
+                            "thumb" : {
+                              "h" : 150,
+                              "resize" : "crop",
+                              "w" : 150
+                            }
+                          }
+                        },
+                        {
+                          "id_str" : "1220096287414136832",
+                          "url" : "https://t.co/ksvns9DxNi",
+                          "media_url" : "http://pbs.twimg.com/media/EO6nG-sXsAAV_BJ.png",
+                          "expanded_url" : "https://twitter.com/pnpmjs/status/1220096575206240256/photo/1",
+                          "display_url" : "pic.twitter.com/ksvns9DxNi",
+                          "media_url_https" : "https://pbs.twimg.com/media/EO6nG-sXsAAV_BJ.png",
+                          "id" : 1220096287414136832,
+                          "indices" : [
+                            136,
+                            159
+                          ],
+                          "type" : "photo",
+                          "sizes" : {
+                            "large" : {
+                              "h" : 208,
+                              "resize" : "fit",
+                              "w" : 530
+                            },
+                            "small" : {
+                              "h" : 208,
+                              "resize" : "fit",
+                              "w" : 530
+                            },
+                            "medium" : {
+                              "h" : 208,
+                              "resize" : "fit",
+                              "w" : 530
+                            },
+                            "thumb" : {
+                              "h" : 150,
+                              "resize" : "crop",
+                              "w" : 150
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "display_text_range" : [
+                      0,
+                      135
+                    ],
+                    "full_text" : "pnpm v4.9 will have command completion in bash, zsh and fish!\n\nCommands, options, script names, dependency names will be autocompleted. https://t.co/ksvns9DxNi"
+                  },
+                  "in_reply_to_screen_name" : null,
+                  "entities" : {
+                    "symbols" : [ ],
+                    "urls" : [
+                      {
+                        "url" : "https://t.co/Meajn0Df6F",
+                        "expanded_url" : "https://twitter.com/i/web/status/1220096575206240256",
+                        "display_url" : "twitter.com/i/web/status/1…",
+                        "indices" : [
+                          117,
+                          140
+                        ]
+                      }
+                    ],
+                    "user_mentions" : [ ],
+                    "hashtags" : [ ]
+                  },
+                  "id_str" : "1220096575206240256",
+                  "in_reply_to_status_id" : null,
+                  "text" : "pnpm v4.9 will have command completion in bash, zsh and fish!\n\nCommands, options, script names, dependency names wi… https://t.co/Meajn0Df6F",
+                  "is_quote_status" : false,
+                  "reply_count" : 1,
+                  "in_reply_to_user_id_str" : null,
+                  "in_reply_to_user_id" : null,
+                  "geo" : null,
+                  "filter_level" : "low",
+                  "created_at" : "Wed Jan 22 21:31:06 +0000 2020",
+                  "favorite_count" : 32,
+                  "in_reply_to_status_id_str" : null,
+                  "lang" : "en",
+                  "truncated" : true
+                },
+                "quoted_status_id" : 1220096575206240256,
+                "id" : 1231935765506134024,
+                "coordinates" : null,
+                "source" : "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                "user" : {
+                  "followers_count" : 40,
+                  "profile_use_background_image" : false,
+                  "verified" : false,
+                  "time_zone" : null,
+                  "profile_sidebar_fill_color" : "000000",
+                  "following" : null,
+                  "id" : 2396197062,
+                  "statuses_count" : 596,
+                  "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+                  "geo_enabled" : false,
+                  "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+                  "follow_request_sent" : null,
+                  "is_translator" : false,
+                  "profile_link_color" : "94D487",
+                  "location" : null,
+                  "profile_background_color" : "000000",
+                  "screen_name" : "Antho85180",
+                  "default_profile" : false,
+                  "utc_offset" : null,
+                  "id_str" : "2396197062",
+                  "profile_banner_url" : "https://pbs.twimg.com/profile_banners/2396197062/1450292177",
+                  "protected" : false,
+                  "profile_image_url_https" : "https://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "profile_background_tile" : false,
+                  "listed_count" : 1,
+                  "default_profile_image" : false,
+                  "description" : null,
+                  "translator_type" : "none",
+                  "url" : null,
+                  "favourites_count" : 394,
+                  "created_at" : "Tue Mar 18 13:16:18 +0000 2014",
+                  "friends_count" : 166,
+                  "contributors_enabled" : false,
+                  "profile_text_color" : "000000",
+                  "lang" : null,
+                  "profile_sidebar_border_color" : "000000",
+                  "profile_image_url" : "http://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "name" : "Anthony85",
+                  "notifications" : null
+                },
+                "contributors" : null,
+                "quote_count" : 0,
+                "@timestamp" : "2020-02-24T13:35:49.000Z",
+                "favorited" : false,
+                "retweeted" : false,
+                "place" : null,
+                "in_reply_to_screen_name" : null,
+                "entities" : {
+                  "symbols" : [ ],
+                  "urls" : [ ],
+                  "user_mentions" : [ ],
+                  "hashtags" : [
+                    {
+                      "text" : "dbooster",
+                      "indices" : [
+                        6,
+                        15
+                      ]
+                    }
+                  ]
+                },
+                "id_str" : "1231935765506134024",
+                "in_reply_to_status_id" : null,
+                "text" : "Test  #dbooster",
+                "is_quote_status" : true,
+                "reply_count" : 0,
+                "@version" : "1",
+                "timestamp_ms" : "1582551349413",
+                "in_reply_to_user_id_str" : null,
+                "quoted_status_id_str" : "1220096575206240256",
+                "in_reply_to_user_id" : null,
+                "geo" : null,
+                "quoted_status_permalink" : {
+                  "url" : "https://t.co/dTNXtzHYgw",
+                  "display" : "twitter.com/pnpmjs/status/…",
+                  "expanded" : "https://twitter.com/pnpmjs/status/1220096575206240256"
+                },
+                "filter_level" : "low",
+                "created_at" : "Mon Feb 24 13:35:49 +0000 2020",
+                "favorite_count" : 0,
+                "in_reply_to_status_id_str" : null,
+                "lang" : "en",
+                "truncated" : false
+              }
+            },
+            {
+              "_index" : "twitter",
+              "_type" : "tweet",
+              "_id" : "uPTvd3ABHXlBAZG6caqt",
+              "_score" : 1.0,
+              "_source" : {
+                "retweet_count" : 0,
+                "id" : 1231972633211740161,
+                "coordinates" : null,
+                "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                "user" : {
+                  "followers_count" : 6,
+                  "profile_use_background_image" : true,
+                  "verified" : false,
+                  "time_zone" : null,
+                  "profile_sidebar_fill_color" : "DDEEF6",
+                  "following" : null,
+                  "id" : 918517751148314629,
+                  "statuses_count" : 19,
+                  "profile_background_image_url" : "",
+                  "geo_enabled" : false,
+                  "profile_background_image_url_https" : "",
+                  "follow_request_sent" : null,
+                  "is_translator" : false,
+                  "profile_link_color" : "1DA1F2",
+                  "location" : null,
+                  "profile_background_color" : "F5F8FA",
+                  "screen_name" : "Toouuze",
+                  "default_profile" : true,
+                  "utc_offset" : null,
+                  "id_str" : "918517751148314629",
+                  "protected" : false,
+                  "profile_image_url_https" : "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                  "profile_background_tile" : false,
+                  "listed_count" : 0,
+                  "default_profile_image" : false,
+                  "description" : null,
+                  "translator_type" : "none",
+                  "url" : null,
+                  "favourites_count" : 548,
+                  "created_at" : "Thu Oct 12 16:44:31 +0000 2017",
+                  "friends_count" : 96,
+                  "contributors_enabled" : false,
+                  "profile_text_color" : "333333",
+                  "lang" : null,
+                  "profile_sidebar_border_color" : "C0DEED",
+                  "profile_image_url" : "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                  "name" : "TOUZE",
+                  "notifications" : null
+                },
+                "contributors" : null,
+                "quote_count" : 0,
+                "possibly_sensitive" : false,
+                "@timestamp" : "2020-02-24T16:02:19.000Z",
+                "favorited" : false,
+                "retweeted" : false,
+                "place" : null,
+                "in_reply_to_screen_name" : null,
+                "entities" : {
+                  "symbols" : [ ],
+                  "urls" : [
+                    {
+                      "url" : "https://t.co/Z9P2Zf1uS8",
+                      "expanded_url" : "https://www.google.fr/",
+                      "display_url" : "google.fr",
+                      "indices" : [
+                        21,
+                        44
+                      ]
+                    }
+                  ],
+                  "user_mentions" : [ ],
+                  "hashtags" : [
+                    {
+                      "text" : "dbooster",
+                      "indices" : [
+                        45,
+                        54
+                      ]
+                    }
+                  ]
+                },
+                "id_str" : "1231972633211740161",
+                "in_reply_to_status_id" : null,
+                "text" : "This  beautiful link\nhttps://t.co/Z9P2Zf1uS8\n#dbooster",
+                "is_quote_status" : false,
+                "reply_count" : 0,
+                "@version" : "1",
+                "timestamp_ms" : "1582560139359",
+                "in_reply_to_user_id_str" : null,
+                "in_reply_to_user_id" : null,
+                "geo" : null,
+                "filter_level" : "low",
+                "created_at" : "Mon Feb 24 16:02:19 +0000 2020",
+                "favorite_count" : 0,
+                "in_reply_to_status_id_str" : null,
+                "lang" : "en",
+                "truncated" : false
+              }
+            },
+            {
+              "_index" : "twitter",
+              "_type" : "tweet",
+              "_id" : "t_Tvd3ABHXlBAZG6caqt",
+              "_score" : 1.0,
+              "_source" : {
+                "retweet_count" : 0,
+                "id" : 1231972632624553991,
+                "coordinates" : null,
+                "source" : "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                "user" : {
+                  "followers_count" : 40,
+                  "profile_use_background_image" : false,
+                  "verified" : false,
+                  "time_zone" : null,
+                  "profile_sidebar_fill_color" : "000000",
+                  "following" : null,
+                  "id" : 2396197062,
+                  "statuses_count" : 597,
+                  "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+                  "geo_enabled" : false,
+                  "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+                  "follow_request_sent" : null,
+                  "is_translator" : false,
+                  "profile_link_color" : "94D487",
+                  "location" : null,
+                  "profile_background_color" : "000000",
+                  "screen_name" : "Antho85180",
+                  "default_profile" : false,
+                  "utc_offset" : null,
+                  "id_str" : "2396197062",
+                  "profile_banner_url" : "https://pbs.twimg.com/profile_banners/2396197062/1450292177",
+                  "protected" : false,
+                  "profile_image_url_https" : "https://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "profile_background_tile" : false,
+                  "listed_count" : 1,
+                  "default_profile_image" : false,
+                  "description" : null,
+                  "translator_type" : "none",
+                  "url" : null,
+                  "favourites_count" : 394,
+                  "created_at" : "Tue Mar 18 13:16:18 +0000 2014",
+                  "friends_count" : 166,
+                  "contributors_enabled" : false,
+                  "profile_text_color" : "000000",
+                  "lang" : null,
+                  "profile_sidebar_border_color" : "000000",
+                  "profile_image_url" : "http://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "name" : "Anthony85",
+                  "notifications" : null
+                },
+                "contributors" : null,
+                "quote_count" : 0,
+                "@timestamp" : "2020-02-24T16:02:19.000Z",
+                "favorited" : false,
+                "retweeted" : false,
+                "place" : null,
+                "in_reply_to_screen_name" : null,
+                "entities" : {
+                  "symbols" : [ ],
+                  "urls" : [ ],
+                  "user_mentions" : [ ],
+                  "hashtags" : [
+                    {
+                      "text" : "dbooster",
+                      "indices" : [
+                        19,
+                        28
+                      ]
+                    }
+                  ]
+                },
+                "id_str" : "1231972632624553991",
+                "in_reply_to_status_id" : null,
+                "text" : "Tweet d'un tweetos #dbooster",
+                "is_quote_status" : false,
+                "reply_count" : 0,
+                "@version" : "1",
+                "timestamp_ms" : "1582560139219",
+                "in_reply_to_user_id_str" : null,
+                "in_reply_to_user_id" : null,
+                "geo" : null,
+                "filter_level" : "low",
+                "created_at" : "Mon Feb 24 16:02:19 +0000 2020",
+                "favorite_count" : 0,
+                "in_reply_to_status_id_str" : null,
+                "lang" : "fr",
+                "truncated" : false
+              }
+            },
+            {
+              "_index" : "twitter",
+              "_type" : "tweet",
+              "_id" : "ufTwd3ABHXlBAZG6D6rc",
+              "_score" : 1.0,
+              "_source" : {
+                "retweet_count" : 0,
+                "id" : 1231972797578084355,
+                "coordinates" : null,
+                "source" : "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+                "user" : {
+                  "followers_count" : 6,
+                  "profile_use_background_image" : true,
+                  "verified" : false,
+                  "time_zone" : null,
+                  "profile_sidebar_fill_color" : "DDEEF6",
+                  "following" : null,
+                  "id" : 918517751148314629,
+                  "statuses_count" : 19,
+                  "profile_background_image_url" : "",
+                  "geo_enabled" : false,
+                  "profile_background_image_url_https" : "",
+                  "follow_request_sent" : null,
+                  "is_translator" : false,
+                  "profile_link_color" : "1DA1F2",
+                  "location" : null,
+                  "profile_background_color" : "F5F8FA",
+                  "screen_name" : "Toouuze",
+                  "default_profile" : true,
+                  "utc_offset" : null,
+                  "id_str" : "918517751148314629",
+                  "protected" : false,
+                  "profile_image_url_https" : "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                  "profile_background_tile" : false,
+                  "listed_count" : 0,
+                  "default_profile_image" : false,
+                  "description" : null,
+                  "translator_type" : "none",
+                  "url" : null,
+                  "favourites_count" : 548,
+                  "created_at" : "Thu Oct 12 16:44:31 +0000 2017",
+                  "friends_count" : 96,
+                  "contributors_enabled" : false,
+                  "profile_text_color" : "333333",
+                  "lang" : null,
+                  "profile_sidebar_border_color" : "C0DEED",
+                  "profile_image_url" : "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                  "name" : "TOUZE",
+                  "notifications" : null
+                },
+                "contributors" : null,
+                "quote_count" : 0,
+                "possibly_sensitive" : false,
+                "@timestamp" : "2020-02-24T16:02:58.000Z",
+                "favorited" : false,
+                "retweeted" : false,
+                "place" : null,
+                "in_reply_to_screen_name" : null,
+                "entities" : {
+                  "symbols" : [ ],
+                  "urls" : [
+                    {
+                      "url" : "https://t.co/fR7jTDVRJ2",
+                      "expanded_url" : "https://www.capgemini.com/",
+                      "display_url" : "capgemini.com",
+                      "indices" : [
+                        23,
+                        46
+                      ]
+                    },
+                    {
+                      "url" : "https://t.co/Z9P2Zf1uS8",
+                      "expanded_url" : "https://www.google.fr/",
+                      "display_url" : "google.fr",
+                      "indices" : [
+                        47,
+                        70
+                      ]
+                    }
+                  ],
+                  "user_mentions" : [ ],
+                  "hashtags" : [
+                    {
+                      "text" : "dbooster",
+                      "indices" : [
+                        71,
+                        80
+                      ]
+                    }
+                  ]
+                },
+                "id_str" : "1231972797578084355",
+                "in_reply_to_status_id" : null,
+                "text" : "Those beautiful links \nhttps://t.co/fR7jTDVRJ2\nhttps://t.co/Z9P2Zf1uS8\n#dbooster",
+                "is_quote_status" : false,
+                "reply_count" : 0,
+                "@version" : "1",
+                "timestamp_ms" : "1582560178547",
+                "in_reply_to_user_id_str" : null,
+                "in_reply_to_user_id" : null,
+                "geo" : null,
+                "filter_level" : "low",
+                "created_at" : "Mon Feb 24 16:02:58 +0000 2020",
+                "favorite_count" : 0,
+                "in_reply_to_status_id_str" : null,
+                "lang" : "en",
+                "truncated" : false
+              }
+            },
+            {
+              "_index" : "twitter",
+              "_type" : "tweet",
+              "_id" : "uvTwd3ABHXlBAZG6-6o5",
+              "_score" : 1.0,
+              "_source" : {
+                "retweet_count" : 0,
+                "id" : 1231973060338692096,
+                "coordinates" : null,
+                "source" : "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                "user" : {
+                  "followers_count" : 40,
+                  "profile_use_background_image" : false,
+                  "verified" : false,
+                  "time_zone" : null,
+                  "profile_sidebar_fill_color" : "000000",
+                  "following" : null,
+                  "id" : 2396197062,
+                  "statuses_count" : 598,
+                  "profile_background_image_url" : "http://abs.twimg.com/images/themes/theme1/bg.png",
+                  "geo_enabled" : false,
+                  "profile_background_image_url_https" : "https://abs.twimg.com/images/themes/theme1/bg.png",
+                  "follow_request_sent" : null,
+                  "is_translator" : false,
+                  "profile_link_color" : "94D487",
+                  "location" : null,
+                  "profile_background_color" : "000000",
+                  "screen_name" : "Antho85180",
+                  "default_profile" : false,
+                  "utc_offset" : null,
+                  "id_str" : "2396197062",
+                  "profile_banner_url" : "https://pbs.twimg.com/profile_banners/2396197062/1450292177",
+                  "protected" : false,
+                  "profile_image_url_https" : "https://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "profile_background_tile" : false,
+                  "listed_count" : 1,
+                  "default_profile_image" : false,
+                  "description" : null,
+                  "translator_type" : "none",
+                  "url" : null,
+                  "favourites_count" : 394,
+                  "created_at" : "Tue Mar 18 13:16:18 +0000 2014",
+                  "friends_count" : 166,
+                  "contributors_enabled" : false,
+                  "profile_text_color" : "000000",
+                  "lang" : null,
+                  "profile_sidebar_border_color" : "000000",
+                  "profile_image_url" : "http://pbs.twimg.com/profile_images/729725967032324096/3D8QRvw__normal.jpg",
+                  "name" : "Anthony85",
+                  "notifications" : null
+                },
+                "contributors" : null,
+                "quote_count" : 0,
+                "possibly_sensitive" : false,
+                "@timestamp" : "2020-02-24T16:04:01.000Z",
+                "favorited" : false,
+                "retweeted" : false,
+                "place" : null,
+                "in_reply_to_screen_name" : null,
+                "entities" : {
+                  "symbols" : [ ],
+                  "urls" : [
+                    {
+                      "url" : "https://t.co/WnvK6d9xhW",
+                      "expanded_url" : "https://www.wikipedia.org/",
+                      "display_url" : "wikipedia.org",
+                      "indices" : [
+                        10,
+                        33
+                      ]
+                    }
+                  ],
+                  "user_mentions" : [ ],
+                  "hashtags" : [
+                    {
+                      "text" : "dbooster",
+                      "indices" : [
+                        0,
+                        9
+                      ]
+                    }
+                  ]
+                },
+                "id_str" : "1231973060338692096",
+                "in_reply_to_status_id" : null,
+                "text" : "#dbooster https://t.co/WnvK6d9xhW",
+                "is_quote_status" : false,
+                "reply_count" : 0,
+                "@version" : "1",
+                "timestamp_ms" : "1582560241194",
+                "in_reply_to_user_id_str" : null,
+                "in_reply_to_user_id" : null,
+                "geo" : null,
+                "filter_level" : "low",
+                "created_at" : "Mon Feb 24 16:04:01 +0000 2020",
+                "favorite_count" : 0,
+                "in_reply_to_status_id_str" : null,
+                "lang" : "und",
+                "truncated" : false
+              }
+            }
+          ]
+        }
+      }
+
+}
+  

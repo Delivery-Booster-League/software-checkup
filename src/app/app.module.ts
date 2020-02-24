@@ -20,6 +20,7 @@ import { BookmarksComponent } from './bookmarks/bookmarks.component';
 import { CheckListsComponent } from './check-lists/check-lists.component';
 import { LandingComponent } from './landing/landing.component';
 
+import {NgxLinkifyjsModule} from 'ngx-linkifyjs';
 
 
 @NgModule({
@@ -42,7 +43,11 @@ import { LandingComponent } from './landing/landing.component';
     MatSnackBarModule,
     MatSelectModule,
     MatListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxLinkifyjsModule.forRoot({
+      enableHash: false, // optional - default true
+      enableMention: false // optional - default true
+    })
     
   ],
   providers: [],
