@@ -17,3 +17,12 @@
 #github-logo{
   width: 20px;
 }
+
+.theme-changer{
+  position: fixed;
+  bottom: 15px;
+  right: 15px; 
+}
+.app-body{
+  display: inherit;
+}

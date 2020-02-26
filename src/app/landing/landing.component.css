@@ -7,7 +7,7 @@
     background-size: cover;
     height: -moz-calc(100% - 64px);
     height: -webkit-calc(100% - 64px);
-    height: calc(100% - 64px);
+    height: calc(100vh - 64px);
 
   }
   .description{
@@ -132,6 +132,8 @@ p{
     #activity-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    #desc{
         padding: 0 16px;
     }
     #pour-les-projet{
