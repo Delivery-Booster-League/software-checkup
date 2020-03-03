@@ -9,10 +9,19 @@ import {OverlayContainer} from '@angular/cdk/overlay';
 })
 export class AppComponent {
   darkModeActived : boolean = false;
-  constructor(private _snackBar: MatSnackBar,private overlayContainer: OverlayContainer) { }
+  public isMobileResolution: boolean;
+  constructor(private _snackBar: MatSnackBar,private overlayContainer: OverlayContainer) {
+    if (window.innerWidth < 767) {
+      this.isMobileResolution = true;
+    } else {
+      this.isMobileResolution = false;
+    }
+    console.log(this.isMobileResolution);
+  }
 
   toggleDarkTheme(){
     this.darkModeActived = !this.darkModeActived;
+    
     this.openSnackBar();
     this.addaptOverlayToTheme();
   }

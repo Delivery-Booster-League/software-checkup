@@ -1,21 +1,34 @@
 <div class="app-body" [ngClass]="{'unicorn-dark-theme' : darkModeActived,'candy-app-theme' : !darkModeActived}">
-  <div class="app-frame mat-app-background">
-    <mat-toolbar color="primary">
-      <span class="home-button" routerLink="/">SOFTWARE CHECKUP</span>
-      <span class="navbar-spacer"></span>
-      <button mat-button routerLink="/mind-map">Cartographie</button>
-      <button mat-button routerLink="/bookmarks">Liens favoris</button>
-      <button mat-button routerLink="/check-lists">Les checklists</button>
-    </mat-toolbar>
-    <router-outlet></router-outlet>
+    <div class="app-frame mat-app-background">
+        <mat-toolbar *ngIf="!isMobileResolution" color="primary">
+            <span class="home-button" routerLink="/">SOFTWARE CHECKUP</span>
+            <span class="navbar-spacer"></span>
+            <button #cartographie mat-button routerLink="/mind-map">Cartographie</button>
+            <button #fav mat-button routerLink="/bookmarks">Liens favoris</button>
+            <button #checklist mat-button routerLink="/check-lists">Les checklists</button>
+        </mat-toolbar>
+        <mat-toolbar *ngIf="isMobileResolution" color="primary">
+            <span class="home-button" routerLink="/">SOFTWARE CHECKUP</span>
+            <span class="navbar-spacer"></span>
+            <button mat-icon-button routerLink="/mind-map">
+            <mat-icon>map</mat-icon>
+          </button>
+            <button mat-icon-button routerLink="/bookmarks">
+            <mat-icon>menu_book</mat-icon>
+          </button>
+            <button mat-icon-button routerLink="/check-lists">
+            <mat-icon>check_box</mat-icon>
+          </button>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
 
-    <mat-toolbar id="footer" color="primary">
-      <a class="footer-button" mat-raised-button target="_blank" href="https://github.com/Delivery-Booster-League/software-checkup">Github de l'application  <img id="github-logo" src="assets/GitHub-Mark-32px.png"/></a>
-    </mat-toolbar>
+        <mat-toolbar id="footer" color="primary">
+            <a class="footer-button" mat-raised-button target="_blank" href="https://github.com/Delivery-Booster-League/software-checkup">Github de l'application  <img id="github-logo" src="assets/GitHub-Mark-32px.png"/></a>
+        </mat-toolbar>
 
-    <button class="theme-changer" mat-fab color="accent" (click)="toggleDarkTheme()">
+        <button class="theme-changer" mat-fab color="accent" (click)="toggleDarkTheme()">
       <mat-icon *ngIf="darkModeActived">brightness_5</mat-icon>
       <mat-icon *ngIf="!darkModeActived">brightness_2</mat-icon>
     </button>
-  </div>
+    </div>
 </div>

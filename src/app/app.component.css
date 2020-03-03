@@ -1,32 +1,43 @@
 .navbar-spacer {
-  flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
-#footer{
-  padding-right: 45%;
-  padding-left: 45%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-
-}
-#footer a{
-  align-self: center;
-  text-align: center;
-  justify-self: center;
-}
-#github-logo{
-  width: 20px;
+#footer {
+    padding-right: 45%;
+    padding-left: 45%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
-.theme-changer{
-  position: fixed;
-  bottom: 15px;
-  right: 15px; 
-}
-.app-body{
-  display: inherit;
+#footer a {
+    align-self: center;
+    text-align: center;
+    justify-self: center;
 }
 
-.home-button:hover{
-  cursor: pointer;
+#github-logo {
+    width: 20px;
+}
+
+.theme-changer {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.app-body {
+    display: inherit;
+}
+
+.home-button:hover {
+    cursor: pointer;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 767px) {
+    .home-button {
+        font-size: 15px;
+    }
 }
