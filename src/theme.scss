@@ -65,6 +65,9 @@ $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
         .footer-button{
             background-color:#124348;
         }
+        .node text {
+            fill:white;
+        }
     }
 
 // Include the alternative theme styles inside of a block with a CSS class. You can make this

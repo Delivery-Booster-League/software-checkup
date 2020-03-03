@@ -21,6 +21,7 @@ import { CheckListsComponent } from './check-lists/check-lists.component';
 import { LandingComponent } from './landing/landing.component';
 
 import {NgxLinkifyjsModule} from 'ngx-linkifyjs';
+import { MindmapComponent } from './mindmap/mindmap.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {NgxLinkifyjsModule} from 'ngx-linkifyjs';
     AppComponent,
     BookmarksComponent,
     CheckListsComponent,
-    LandingComponent
+    LandingComponent,
+    MindmapComponent
   ],
   imports: [
     BrowserModule,
