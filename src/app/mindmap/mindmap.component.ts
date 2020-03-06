@@ -1,5 +1,6 @@
 import { Component, ElementRef, Input, OnChanges, ViewChild, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import { MindmapService } from '../service/mindmap.service';
+import { Router } from '@angular/router';
 import * as d3 from 'd3';
 
 @Component({
@@ -23,7 +24,7 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
 
   margin = { top: 20, right: 20, bottom: 30, left: 40 };
 
-  constructor(private mindmapService: MindmapService) {
+  constructor(private mindmapService: MindmapService,private router: Router ) {
   }
 
   ngOnChanges(): void {
@@ -68,7 +69,7 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
     // Collapse after the second level
     root.children.forEach(collapse);
 
-    update(root);
+    update(root,this.router);
 
     // Collapse the node and all it's children
     function collapse(d) {
@@ -79,7 +80,7 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
       }
     }
 
-    function update(source) {
+    function update(source,router:any) {
 
       // Assigns the x and y position for the nodes
       var treeData = treemap(root);
@@ -102,13 +103,14 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
         .attr('class', 'node')
         .attr("transform", function (d) {
           return "translate(" + source.y0 + "," + source.x0 + ")";
-        })
-        .on('click', click);
+        });
+        
 
       // Add Circle for the nodes
       nodeEnter.append('circle')
         .attr('class', 'node')
         .attr('r', 1e-6)
+        .on('click', click)
         .style("fill", function (d: any) {
           return d._children ? "lightsteelblue" : "#fff";
         });
@@ -126,6 +128,10 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
           return d.data.link
         })
         .attr("target", "_blank")
+        .on('click', (d:any)=>{
+          console.log(d)
+          router.navigate(['mind-map', d.data.article])
+        })
         .text(function (d: any) { return d.data.name; });
 
       // UPDATE
@@ -221,11 +227,8 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
           d.children = d._children;
           d._children = null;
         }
-        update(d);
+        update(d,router);
       }
     }
   }
-
-
-
 }

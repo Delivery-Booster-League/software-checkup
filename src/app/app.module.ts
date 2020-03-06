@@ -18,10 +18,15 @@ import {MatListModule} from '@angular/material/list';
 import { AppRoutingModule } from './app-routing.module';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
 import { CheckListsComponent } from './check-lists/check-lists.component';
+import { ArticleComponent } from './mindmap/article/article.component';
 import { LandingComponent } from './landing/landing.component';
 
 import {NgxLinkifyjsModule} from 'ngx-linkifyjs';
 import { MindmapComponent } from './mindmap/mindmap.component';
+
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http'; 
 
 
 @NgModule({
@@ -30,7 +35,8 @@ import { MindmapComponent } from './mindmap/mindmap.component';
     BookmarksComponent,
     CheckListsComponent,
     LandingComponent,
-    MindmapComponent
+    MindmapComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
@@ -46,10 +52,12 @@ import { MindmapComponent } from './mindmap/mindmap.component';
     MatSelectModule,
     MatListModule,
     AppRoutingModule,
+    HttpClientModule,
     NgxLinkifyjsModule.forRoot({
       enableHash: false, // optional - default true
       enableMention: false // optional - default true
-    })
+    }),
+    MarkdownModule.forRoot({ loader: HttpClient })
     
   ],
   providers: [],

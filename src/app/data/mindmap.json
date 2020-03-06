@@ -3,46 +3,46 @@
         "name": "Modern Delivery",
         "children": [{
                 "name": "Event Oriented Architecture",
-                "link": "http://localhost:4200/mind-map",
+                "article": "test",
                 "children": [{
                         "name": "At least once",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Consistency VS Availability",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Kafka Connect",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     }
                 ]
             },
             {
                 "name": "Big Data",
-                "link": "http://localhost:4200/mind-map",
+                "article": "test",
                 "children": [{
                         "name": "datascience",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "scikit learn",
-                        "link": "http://localhost:4200/mind-map",
+                        "article": "test",
                         "children": [{
                                 "name": "data visualization",
-                                "link": "http://localhost:4200/mind-map"
+                                "article": "test"
                             },
                             {
                                 "name": "Hadoop",
-                                "link": "http://localhost:4200/mind-map"
+                                "article": "test"
                             },
                             {
                                 "name": "Spark",
-                                "link": "http://localhost:4200/mind-map"
+                                "article": "test"
                             },
                             {
                                 "name": "map reduce",
-                                "link": "http://localhost:4200/mind-map"
+                                "article": "test"
                             }
                         ]
                     }
@@ -50,59 +50,59 @@
             },
             {
                 "name": "DevOps",
-                "link": "http://localhost:4200/mind-map",
+                "article": "test",
                 "children": [{
                         "name": "Infrastructure as code",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Containers",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Continuous Integration",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Continuous Delivery",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Main line development",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Feature Flipping",
-                        "link": "http://localhost:4200/mind-map",
+                        "article": "test",
                         "children": [{
                             "name": "FF4J",
-                            "link": "http://localhost:4200/mind-map"
+                            "article": "test"
                         }]
                     },
                     {
                         "name": "Pipeline as code",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     }
                 ]
             },
             {
                 "name": "RPA",
-                "link": "http://localhost:4200/mind-map"
+                "article": "test"
             },
             {
                 "name": "Machine Learning",
-                "link": "http://localhost:4200/mind-map"
+                "article": "test"
             },
             {
                 "name": "Supervision",
-                "link": "http://localhost:4200/mind-map",
+                "article": "test",
                 "children": [{
                         "name": "Tracing",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Monitoring",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     }
                 ]
             },
@@ -110,74 +110,74 @@
                 "name": "Cloud",
                 "children": [{
                         "name": "Provisionning",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Computation",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Infrastructure as a service",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Platform as a service",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Container as a service",
-                        "link": "http://localhost:4200/mind-map",
+                        "article": "test",
                         "children": [{
                                 "name": "Kubernetes",
-                                "link": "http://localhost:4200/mind-map"
+                                "article": "test"
                             },
                             {
                                 "name": "Docker",
-                                "link": "http://localhost:4200/mind-map"
+                                "article": "test"
                             },
                             {
                                 "name": "Istio",
-                                "link": "http://localhost:4200/mind-map"
+                                "article": "test"
                             }
                         ]
                     },
                     {
                         "name": "Function as a service",
-                        "link": "http://localhost:4200/mind-map",
+                        "article": "test",
                         "children": [{
                             "name": "Serverless",
-                            "link": "http://localhost:4200/mind-map"
+                            "article": "test"
                         }]
                     }
                 ]
             },
             {
                 "name": "MicroServices",
-                "link": "http://localhost:4200/mind-map",
+                "article": "test",
                 "children": [{
                         "name": "Resource-Oriented Architecture",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     },
                     {
                         "name": "Service Discovery",
-                        "link": "http://localhost:4200/mind-map",
+                        "article": "test",
                         "children": [{
                                 "name": "Consul",
-                                "link": "http://localhost:4200/mind-map"
+                                "article": "test"
                             },
                             {
                                 "name": "Traefik",
-                                "link": "http://localhost:4200/mind-map"
+                                "article": "test"
                             },
                             {
                                 "name": "Registrator",
-                                "link": "http://localhost:4200/mind-map"
+                                "article": "test"
                             }
                         ]
                     },
                     {
                         "name": "Circuit breaker",
-                        "link": "http://localhost:4200/mind-map"
+                        "article": "test"
                     }
                 ]
             }
