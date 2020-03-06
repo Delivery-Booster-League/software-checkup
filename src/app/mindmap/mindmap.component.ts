@@ -17,7 +17,7 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
     this.createChart();
   }
 
-  @ViewChild('chart', { static: false })
+  @ViewChild('chart')
   private chartContainer: ElementRef;
 
   data: any = this.mindmapService.getMindmap();

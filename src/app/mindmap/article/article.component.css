@@ -1,12 +1,7 @@
 .content {
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-rows: minmax(20px, auto);
     margin: 32px auto;
     padding: 0 16px;
     max-width: 960px;
-    flex-direction: column;
-    align-items: center;
 }
 
 .markdown-body .octicon {
@@ -836,7 +831,6 @@
     overflow: auto;
     font-size: 85%;
     line-height: 1.45;
-    background-color: #f6f8fa;
     border-radius: 3px;
 }
 
