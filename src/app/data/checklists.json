@@ -1,75 +1,71 @@
 {
-  "CHECKLISTS": [{
-    "title": "User Story",
-    "subparts": [
-    {
-      "name": "User Story - TDD style",
-      "completion": 100,
-      "steps": [
-        {
-          "libelle": "Toutes les exigences fonctionnelles sont testées unitairement",
-          "desc": "Toutes les règles de gestion doivent être testées, avec tous les cas fonctionnels inhérents. Les données de tests doivent être externalisées et aisément modifiables (BDD ou fichier)."
-        },
-        {
-          "libelle": "La fonctionnalité est développée",
-          "desc": "La fonctionnalité est achevée lorsqu'elle répond à toutes les exigences de la spécification et que tous les tests fonctionnels sont passants."
-        },
-        {
-          "libelle": "Toutes les méthodes utilitaires sont testées",
-          "desc": "Toutes les méthodes utilitaires (parsing date, parsing fichier, parsing chaines...) doivent être externalisées et testées."
-        },
-        {
-          "libelle": "Tous les messages applicatifs affichés à l'utilisateur sont externalisés",
-          "desc": "Tous les messages applicatifs susceptibles d'être affichés à l'utilisateur doivent être externalisés dans des fichiers d'internationalisation (i18n). ex: messages_fr_fr.properties"
-        },
-        {
-          "libelle": "(Bonus) Toutes les traces applicatives sont externalisées",
-          "desc": "On pourra considérer comme un agrément appréciable que toutes les traces applicatives soient également externalisées dans des fichiers i18n, lorsqu'elles diffèrent du message affiché à l'utilisateur."
-        },
-        {
-          "libelle": "Les valeurs des propriétés métiers sont externalisées et portent des noms compréhensibles",
-          "desc": "Toutes les propriétés susceptibles de varier (référentiel, règles de gestion, autre) doivent être définies en dehors du code source pour éviter des recherches fastidieuses à chaque mise à jour (BDD ou fichier)."
-        },
-        {
-          "libelle": "Les valeurs des propriétés techniques doivent être externalisées",
-          "desc": "Toutes les propriétés susceptibles de varier en fonction des environnements (Pagination, chemins, connexions externes, nombre de treads...) doivent être externalisées, en base de données ou dans des fichiers. Pour les langages compilés, les fichiers de configuration (properties, json) doivent être stockés dans un composant distinct, pour éviter une nouvelle compilation du livrable en cas de mise à jour."
-        },
-        {
-          "libelle": "Le projet se construit correctement",
-          "desc": "Toutes les étapes de construction du projet doivent s'exécuter correctement, y compris les tests. Le temps de compilation ne doit pas excéder 10 minutes (Temps défini par l'équipe)."
-        },
-        {
-          "libelle": "L'exécutable ne contient que des dépendances validées",
-          "desc": "Toutes les dépendances contenues dans le livrable sont des releases. Elles sont toutes passées par un processus de validation. (Pas de Snapshots)"
-        },
-        {
-          "libelle": "Le livrable ne contient aucun fichier ou librairie inutile à son exécution",
-          "desc": "Attention à ne pas embarquer des fichiers de configuration ou des librairies qui ne sont nécessaires qu'en local."
-        },
-        {
-          "libelle": "La documentation est à jour, le cas échéant",
-          "desc": "Si la nouvelle fonctionnalité ou le correctif le nécessite, la documentation doit être à jour. Ex: modification de configuration sur les enviromments, sur la PIC ou sur le poste de dev..."
-        },
-        {
-          "libelle": "La demande de mise à disposition a été validée",
-          "desc": "La merge request ou pull request (ou toute autre opération de release management) a été acceptée. Le code a été revu par un pair."
-        },
-        {
-          "libelle": "L'application fonctionne correctement",
-          "desc": "La modification du code source n'a pas entrainé de régressions sur l'application. "
-        },
-        {
-          "libelle": "La nouvelle fonctionnalité répond aux exigences fonctionnelles",
-          "desc": "Les équipes de recette ou les tests automatisés ont permis de valider le fonctionnement de l'application"
-        }
-      ]
-    }
-    ]},
+  "CHECKLISTS": [
     {
       "title": "Definition of done",
       "subparts": [
+		{
+      "name": "DOD TDD Style",
+      "completion": 100,
+      "steps": [
+			{
+			  "libelle": "Toutes les exigences fonctionnelles sont testées unitairement",
+			  "desc": "Toutes les règles de gestion doivent être testées, avec tous les cas fonctionnels inhérents. Les données de tests doivent être externalisées et aisément modifiables (BDD ou fichier)."
+			},
+			{
+			  "libelle": "La fonctionnalité est développée",
+			  "desc": "La fonctionnalité est achevée lorsqu'elle répond à toutes les exigences de la spécification et que tous les tests fonctionnels sont passants."
+			},
+			{
+			  "libelle": "Toutes les méthodes utilitaires sont testées",
+			  "desc": "Toutes les méthodes utilitaires (parsing date, parsing fichier, parsing chaines...) doivent être externalisées et testées."
+			},
+			{
+			  "libelle": "Tous les messages applicatifs affichés à l'utilisateur sont externalisés",
+			  "desc": "Tous les messages applicatifs susceptibles d'être affichés à l'utilisateur doivent être externalisés dans des fichiers d'internationalisation (i18n). ex: messages_fr_fr.properties"
+			},
+			{
+			  "libelle": "(Bonus) Toutes les traces applicatives sont externalisées",
+			  "desc": "On pourra considérer comme un agrément appréciable que toutes les traces applicatives soient également externalisées dans des fichiers i18n, lorsqu'elles diffèrent du message affiché à l'utilisateur."
+			},
+			{
+			  "libelle": "Les valeurs des propriétés métiers sont externalisées et portent des noms compréhensibles",
+			  "desc": "Toutes les propriétés susceptibles de varier (référentiel, règles de gestion, autre) doivent être définies en dehors du code source pour éviter des recherches fastidieuses à chaque mise à jour (BDD ou fichier)."
+			},
+			{
+			  "libelle": "Les valeurs des propriétés techniques doivent être externalisées",
+			  "desc": "Toutes les propriétés susceptibles de varier en fonction des environnements (Pagination, chemins, connexions externes, nombre de treads...) doivent être externalisées, en base de données ou dans des fichiers. Pour les langages compilés, les fichiers de configuration (properties, json) doivent être stockés dans un composant distinct, pour éviter une nouvelle compilation du livrable en cas de mise à jour."
+			},
+			{
+			  "libelle": "Le projet se construit correctement",
+			  "desc": "Toutes les étapes de construction du projet doivent s'exécuter correctement, y compris les tests. Le temps de compilation ne doit pas excéder 10 minutes (Temps défini par l'équipe)."
+			},
+			{
+			  "libelle": "L'exécutable ne contient que des dépendances validées",
+			  "desc": "Toutes les dépendances contenues dans le livrable sont des releases. Elles sont toutes passées par un processus de validation. (Pas de Snapshots)"
+			},
+			{
+			  "libelle": "Le livrable ne contient aucun fichier ou librairie inutile à son exécution",
+			  "desc": "Attention à ne pas embarquer des fichiers de configuration ou des librairies qui ne sont nécessaires qu'en local."
+			},
+			{
+			  "libelle": "La documentation est à jour, le cas échéant",
+			  "desc": "Si la nouvelle fonctionnalité ou le correctif le nécessite, la documentation doit être à jour. Ex: modification de configuration sur les enviromments, sur la PIC ou sur le poste de dev..."
+			},
+			{
+			  "libelle": "La demande de mise à disposition a été validée",
+			  "desc": "La merge request ou pull request (ou toute autre opération de release management) a été acceptée. Le code a été revu par un pair."
+			},
+			{
+			  "libelle": "L'application fonctionne correctement",
+			  "desc": "La modification du code source n'a pas entrainé de régressions sur l'application. "
+			},
+			{
+			  "libelle": "La nouvelle fonctionnalité répond aux exigences fonctionnelles",
+			  "desc": "Les équipes de recette ou les tests automatisés ont permis de valider le fonctionnement de l'application"
+			}
+		]},
         {
-          "name": "Définition of done (API)",
+          "name": "DOD API",
           "completion": 0,
           "steps": [
             {
