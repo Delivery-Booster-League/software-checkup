@@ -9,7 +9,7 @@ import { Step } from '../bean/step';
 @Component({
   selector: 'app-check-lists',
   templateUrl: './check-lists.component.html',
-  styleUrls: ['./check-lists.component.css']
+  styleUrls: ['./check-lists.component.css', '../markdown.css']
 })
 export class CheckListsComponent implements OnInit {
   selectedCheckListId = 0;

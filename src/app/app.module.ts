@@ -14,6 +14,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
@@ -51,6 +52,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatSnackBarModule,
     MatSelectModule,
     MatListModule,
+    MatTooltipModule,
     AppRoutingModule,
     HttpClientModule,
     NgxLinkifyjsModule.forRoot({

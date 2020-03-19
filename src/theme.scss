@@ -1,74 +1,72 @@
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
-
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 @include mat-core();
-
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-
 @mixin candy-app-theme($theme) {
-
-
-// The warn palette is optional (defaults to red).
-$warn:    mat-palette($mat-red);
-
-.mat-app-background{
-    background-color: #eee;
+    // The warn palette is optional (defaults to red).
+    $warn: mat-palette($mat-red);
+    .mat-app-background {
+        background-color: #eee;
+    }
 }
-}
+
 $primary: mat-palette($mat-teal, 300);
-$accent:  mat-palette($mat-yellow, 600);
+$accent: mat-palette($mat-yellow, 600);
 $theme: mat-light-theme($primary, $accent);
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-
 @include angular-material-theme($theme);
-.candy-app-theme{
+.candy-app-theme {
     @include angular-material-theme($theme);
     @include candy-app-theme($theme);
 }
 
 // Define an alternate dark theme.
 $dark-primary: mat-palette($mat-teal, 300);
-$dark-accent:  mat-palette($mat-amber, A200, A100, A400);
-$dark-warn:    mat-palette($mat-deep-orange);
-$dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
-
-
+$dark-accent: mat-palette($mat-amber, A200, A100, A400);
+$dark-warn: mat-palette($mat-deep-orange);
+$dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 @mixin dark-app-theme($dark-theme) {
-
-
     // The warn palette is optional (defaults to red).
-    $warn:    mat-palette($mat-red);
-    
-        .mat-app-background{
-            background-color:#212728;
-        }
-        .mat-stepper-vertical{
-            background-color:#124348;
-        }
-        .mat-card{
-            background-color:#124348;
-        }
-        .mat-select-panel{
-            background-color:#124348;
-
-        }
-        #github-logo{
-            filter: invert(1);
-        }
-        .footer-button{
-            background-color:#124348;
-        }
-        .node text {
-            fill:white;
-        }
+    $warn: mat-palette($mat-red);
+    .mat-app-background {
+        background-color: #212728;
     }
+    .mat-stepper-vertical {
+        background-color: #124348;
+    }
+    .mat-card {
+        background-color: #124348;
+    }
+    .mat-select-panel {
+        background-color: #124348;
+    }
+    #github-logo {
+        filter: invert(1);
+    }
+    .footer-button {
+        background-color: #124348;
+    }
+    .node text {
+        fill: white;
+    }
+    .markdown-body p,
+    .markdown-body ul,
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6 {
+        color: white;
+    }
+}
 
 // Include the alternative theme styles inside of a block with a CSS class. You can make this
 // CSS class whatever you want. In this example, any component inside of an element with

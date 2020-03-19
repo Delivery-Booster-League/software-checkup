@@ -1,73 +1,86 @@
-  .select-checklist{
-    margin-top:0px;
-    font-size: 40px;
-      font-weight: 300;
+  .select-checklist {
+      margin-top: 0px;
+      font-size: 30px;
+      font-weight: 250;
       letter-spacing: -0.5px;
   }
-  .select-checklist ::ng-deep .mat-form-field-infix{
-    width: 50vw;
-  }
-  ::ng-deep .mat-select-trigger {
-    min-width: 50vw;
+  
+  .is-wip {
+      z-index: 100;
+      position: absolute;
+      top: 15px;
+      right: 10px;
   }
   
-  ::ng-deep .mat-select-panel {
-    max-height: 50vh !important;
+  .author {
+      text-align: right;
+  }
+  
+  .select-checklist ::ng-deep .mat-form-field-infix {
+      width: 40vw;
+  }
+  
+   ::ng-deep .mat-select-trigger {
+      min-width: 40vw;
+  }
+  
+   ::ng-deep .mat-select-panel {
+      max-height: 40vh !important;
   }
   
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(20px, auto);
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: minmax(20px, auto);
   }
   
-  mat-vertical-stepper{
-    grid-column: 1 / 5;
-    grid-row: 1;
+  mat-vertical-stepper {
+      grid-column: 1 / 5;
+      grid-row: 1;
   }
   
-  .percent{
-    align-self: center;
-    justify-self: center;
-    grid-column: 5 / 5;
-    grid-row: 1;
-    font-size: 70px;
-    font-weight: 300;
+  .percent {
+      align-self: center;
+      justify-self: center;
+      grid-column: 5 / 5;
+      grid-row: 1;
+      font-size: 70px;
+      font-weight: 300;
   }
   
-  
-  .done-button{
-    float: right;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  .done-button {
+      float: right;
+      margin-top: 20px;
+      margin-bottom: 10px;
   }
+  
   .content {
-    display: flex;
-    margin: 32px auto;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
+      display: flex;
+      margin: 32px auto;
+      padding: 0 16px;
+      max-width: 960px;
+      flex-direction: column;
+      align-items: center;
   }
   /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-    .content{
-        display: inline;
-      }
-    .select-checklist{
-      margin-top: 10px;
-      font-size: 20px;
-    }
-    mat-vertical-stepper{
-      grid-column: 1 / 6;
-    }
-    .percent{
-      float: right;
-      align-self: right;
-      justify-self: top;
-      grid-row: 2;
-      font-size: 50px;
-    }
   
+  @media screen and (max-width: 767px) {
+      .content {
+          display: inline;
+      }
+      .select-checklist {
+          margin-top: 10px;
+          font-size: 20px;
+      }
+      mat-vertical-stepper {
+          grid-column: 1 / 6;
+      }
+      .percent {
+          float: right;
+          align-self: right;
+          justify-self: top;
+          grid-row: 2;
+          font-size: 50px;
+      }
   }

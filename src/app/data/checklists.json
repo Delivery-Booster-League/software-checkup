@@ -1,246 +1,246 @@
 {
-  "CHECKLISTS": [
-    {
-      "title": "Definition of done",
-      "subparts": [
-		{
-      "name": "DOD TDD Style",
-      "completion": 100,
-      "steps": [
-			{
-			  "libelle": "Toutes les exigences fonctionnelles sont testées unitairement",
-			  "desc": "Toutes les règles de gestion doivent être testées, avec tous les cas fonctionnels inhérents. Les données de tests doivent être externalisées et aisément modifiables (BDD ou fichier)."
-			},
-			{
-			  "libelle": "La fonctionnalité est développée",
-			  "desc": "La fonctionnalité est achevée lorsqu'elle répond à toutes les exigences de la spécification et que tous les tests fonctionnels sont passants."
-			},
-			{
-			  "libelle": "Toutes les méthodes utilitaires sont testées",
-			  "desc": "Toutes les méthodes utilitaires (parsing date, parsing fichier, parsing chaines...) doivent être externalisées et testées."
-			},
-			{
-			  "libelle": "Tous les messages applicatifs affichés à l'utilisateur sont externalisés",
-			  "desc": "Tous les messages applicatifs susceptibles d'être affichés à l'utilisateur doivent être externalisés dans des fichiers d'internationalisation (i18n). ex: messages_fr_fr.properties"
-			},
-			{
-			  "libelle": "(Bonus) Toutes les traces applicatives sont externalisées",
-			  "desc": "On pourra considérer comme un agrément appréciable que toutes les traces applicatives soient également externalisées dans des fichiers i18n, lorsqu'elles diffèrent du message affiché à l'utilisateur."
-			},
-			{
-			  "libelle": "Les valeurs des propriétés métiers sont externalisées et portent des noms compréhensibles",
-			  "desc": "Toutes les propriétés susceptibles de varier (référentiel, règles de gestion, autre) doivent être définies en dehors du code source pour éviter des recherches fastidieuses à chaque mise à jour (BDD ou fichier)."
-			},
-			{
-			  "libelle": "Les valeurs des propriétés techniques doivent être externalisées",
-			  "desc": "Toutes les propriétés susceptibles de varier en fonction des environnements (Pagination, chemins, connexions externes, nombre de treads...) doivent être externalisées, en base de données ou dans des fichiers. Pour les langages compilés, les fichiers de configuration (properties, json) doivent être stockés dans un composant distinct, pour éviter une nouvelle compilation du livrable en cas de mise à jour."
-			},
-			{
-			  "libelle": "Le projet se construit correctement",
-			  "desc": "Toutes les étapes de construction du projet doivent s'exécuter correctement, y compris les tests. Le temps de compilation ne doit pas excéder 10 minutes (Temps défini par l'équipe)."
-			},
-			{
-			  "libelle": "L'exécutable ne contient que des dépendances validées",
-			  "desc": "Toutes les dépendances contenues dans le livrable sont des releases. Elles sont toutes passées par un processus de validation. (Pas de Snapshots)"
-			},
-			{
-			  "libelle": "Le livrable ne contient aucun fichier ou librairie inutile à son exécution",
-			  "desc": "Attention à ne pas embarquer des fichiers de configuration ou des librairies qui ne sont nécessaires qu'en local."
-			},
-			{
-			  "libelle": "La documentation est à jour, le cas échéant",
-			  "desc": "Si la nouvelle fonctionnalité ou le correctif le nécessite, la documentation doit être à jour. Ex: modification de configuration sur les enviromments, sur la PIC ou sur le poste de dev..."
-			},
-			{
-			  "libelle": "La demande de mise à disposition a été validée",
-			  "desc": "La merge request ou pull request (ou toute autre opération de release management) a été acceptée. Le code a été revu par un pair."
-			},
-			{
-			  "libelle": "L'application fonctionne correctement",
-			  "desc": "La modification du code source n'a pas entrainé de régressions sur l'application. "
-			},
-			{
-			  "libelle": "La nouvelle fonctionnalité répond aux exigences fonctionnelles",
-			  "desc": "Les équipes de recette ou les tests automatisés ont permis de valider le fonctionnement de l'application"
-			}
-		]},
-        {
-          "name": "DOD API",
-          "completion": 0,
-          "steps": [
-            {
-              "libelle": "Sonar passant (vert)",
-              "desc": ""
-            },
-            {
-              "libelle": "Pas d'erreur de test dans le job (de toute façon ça bloque les releases)",
-              "desc": ""
-            },
-            {
-              "libelle": "Pas de config en dur ciblant des environnements côté serveur",
-              "desc": ""
-            },
-            {
-              "libelle": "Pas de profil de config d'environnement",
-              "desc": ""
-            },
-            {
-              "libelle": "Pas de modification d'endpoint (type retour, chemin, ajout de param requis, suppression de param)",
-              "desc": ""
-            },
-            {
-              "libelle": "Que les sécurités de endpoints soient bien posées (Admin et ou user et pas de 'or not Authentificated')",
-              "desc": ""
-            },
-            {
-              "libelle": "Readme renseigné sur les evols",
-              "desc": ""
-            },
-            {
-              "libelle": "Tests pour les nouvelles APIs",
-              "desc": ""
-            },
-            {
-              "libelle": "Washer passant",
-              "desc": ""
-            },
-            {
-              "libelle": "Documentation swagger à jour (soit en annotations sur les endpoints, soit dans le swagger.yaml)",
-              "desc": ""
-            },
-            {
-              "libelle": "Pas de dépendances SNAPSHOT",
-              "desc": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Architecture applicative",
-      "subparts": [
-        {
-          "name": "Front",
-          "completion": 0,
-          "steps": [
-            {
-              "libelle": "Gestion des exceptions",
-              "desc": "La gestion des exceptions doit être décrite et implémentée de manière globale. "
-            },
-            {
-              "libelle": "Gestion des messages",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Gestion de la configuration",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Organisation des packages",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-          ]
+    "CHECKLISTS": [{
+            "title": "Definition of done",
+            "subparts": [{
+                    "name": "DOD TDD Style",
+
+                    "iswip": false,
+                    "author": "GORTAIS, Gwendal",
+                    "steps": [{
+                            "libelle": "Toutes les exigences fonctionnelles sont testées unitairement",
+                            "desc": "Toutes les règles de gestion doivent être testées, avec tous les cas fonctionnels inhérents. Les données de tests doivent être externalisées et aisément modifiables (BDD ou fichier)."
+                        },
+                        {
+                            "libelle": "La fonctionnalité est développée",
+                            "desc": "La fonctionnalité est achevée lorsqu'elle répond à toutes les exigences de la spécification et que tous les tests fonctionnels sont passants."
+                        },
+                        {
+                            "libelle": "Toutes les méthodes utilitaires sont testées",
+                            "desc": "Toutes les méthodes utilitaires (parsing date, parsing fichier, parsing chaines...) doivent être externalisées et testées."
+                        },
+                        {
+                            "libelle": "Tous les messages applicatifs affichés à l'utilisateur sont externalisés",
+                            "desc": "Tous les messages applicatifs susceptibles d'être affichés à l'utilisateur doivent être externalisés dans des fichiers d'internationalisation (i18n). ex: messages_fr_fr.properties"
+                        },
+                        {
+                            "libelle": "(Bonus) Toutes les traces applicatives sont externalisées",
+                            "desc": "On pourra considérer comme un agrément appréciable que toutes les traces applicatives soient également externalisées dans des fichiers i18n, lorsqu'elles diffèrent du message affiché à l'utilisateur."
+                        },
+                        {
+                            "libelle": "Les valeurs des propriétés métiers sont externalisées et portent des noms compréhensibles",
+                            "desc": "Toutes les propriétés susceptibles de varier (référentiel, règles de gestion, autre) doivent être définies en dehors du code source pour éviter des recherches fastidieuses à chaque mise à jour (BDD ou fichier)."
+                        },
+                        {
+                            "libelle": "Les valeurs des propriétés techniques doivent être externalisées",
+                            "desc": "Toutes les propriétés susceptibles de varier en fonction des environnements (Pagination, chemins, connexions externes, nombre de treads...) doivent être externalisées, en base de données ou dans des fichiers. Pour les langages compilés, les fichiers de configuration (properties, json) doivent être stockés dans un composant distinct, pour éviter une nouvelle compilation du livrable en cas de mise à jour."
+                        },
+                        {
+                            "libelle": "Le projet se construit correctement",
+                            "desc": "Toutes les étapes de construction du projet doivent s'exécuter correctement, y compris les tests. Le temps de compilation ne doit pas excéder 10 minutes (Temps défini par l'équipe)."
+                        },
+                        {
+                            "libelle": "L'exécutable ne contient que des dépendances validées",
+                            "desc": "Toutes les dépendances contenues dans le livrable sont des releases. Elles sont toutes passées par un processus de validation. (Pas de Snapshots)"
+                        },
+                        {
+                            "libelle": "Le livrable ne contient aucun fichier ou librairie inutile à son exécution",
+                            "desc": "Attention à ne pas embarquer des fichiers de configuration ou des librairies qui ne sont nécessaires qu'en local."
+                        },
+                        {
+                            "libelle": "La documentation est à jour, le cas échéant",
+                            "desc": "Si la nouvelle fonctionnalité ou le correctif le nécessite, la documentation doit être à jour. Ex: modification de configuration sur les enviromments, sur la PIC ou sur le poste de dev..."
+                        },
+                        {
+                            "libelle": "La demande de mise à disposition a été validée",
+                            "desc": "La merge request ou pull request (ou toute autre opération de release management) a été acceptée. Le code a été revu par un pair."
+                        },
+                        {
+                            "libelle": "L'application fonctionne correctement",
+                            "desc": "La modification du code source n'a pas entrainé de régressions sur l'application. "
+                        },
+                        {
+                            "libelle": "La nouvelle fonctionnalité répond aux exigences fonctionnelles",
+                            "desc": "Les équipes de recette ou les tests automatisés ont permis de valider le fonctionnement de l'application"
+                        }
+                    ]
+                },
+                {
+                    "name": "DOD API",
+
+                    "iswip": true,
+                    "author": "CASSARD, Benjamin",
+                    "steps": [{
+                            "libelle": "Sonar passant (vert)",
+                            "desc": ""
+                        },
+                        {
+                            "libelle": "Pas d'erreur de test dans le job (de toute façon ça bloque les releases)",
+                            "desc": ""
+                        },
+                        {
+                            "libelle": "Pas de config en dur ciblant des environnements côté serveur",
+                            "desc": ""
+                        },
+                        {
+                            "libelle": "Pas de profil de config d'environnement",
+                            "desc": ""
+                        },
+                        {
+                            "libelle": "Pas de modification d'endpoint (type retour, chemin, ajout de param requis, suppression de param)",
+                            "desc": ""
+                        },
+                        {
+                            "libelle": "Que les sécurités de endpoints soient bien posées (Admin et ou user et pas de 'or not Authentificated')",
+                            "desc": ""
+                        },
+                        {
+                            "libelle": "Readme renseigné sur les evols",
+                            "desc": ""
+                        },
+                        {
+                            "libelle": "Tests pour les nouvelles APIs",
+                            "desc": ""
+                        },
+                        {
+                            "libelle": "Washer passant",
+                            "desc": ""
+                        },
+                        {
+                            "libelle": "Documentation swagger à jour (soit en annotations sur les endpoints, soit dans le swagger.yaml)",
+                            "desc": ""
+                        },
+                        {
+                            "libelle": "Pas de dépendances SNAPSHOT",
+                            "desc": ""
+                        }
+                    ]
+                }
+            ]
         },
         {
-          "name": "Back",
-          "completion": 0,
-          "steps": [
-            {
-              "libelle": "Gestion des exceptions",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Gestion des messages",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Gestion de la configuration",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Organisation des packages",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "CI / CD",
-      "subparts": [
+            "title": "Architecture applicative",
+            "subparts": [{
+                    "name": "Front",
+
+                    "iswip": true,
+                    "author": "GORTAIS, Gwendal",
+                    "steps": [{
+                            "libelle": "Gestion des exceptions",
+                            "desc": "La gestion des exceptions doit être décrite et implémentée de manière globale. "
+                        },
+                        {
+                            "libelle": "Gestion des messages",
+                            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        },
+                        {
+                            "libelle": "Gestion de la configuration",
+                            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        },
+                        {
+                            "libelle": "Organisation des packages",
+                            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        }
+                    ]
+                },
+                {
+                    "name": "Back",
+
+                    "iswip": true,
+                    "author": "GORTAIS, Gwendal",
+                    "steps": [{
+                            "libelle": "Gestion des exceptions",
+                            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        },
+                        {
+                            "libelle": "Gestion des messages",
+                            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        },
+                        {
+                            "libelle": "Gestion de la configuration",
+                            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        },
+                        {
+                            "libelle": "Organisation des packages",
+                            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        }
+                    ]
+                }
+            ]
+        },
         {
-          "name": "Basic",
-          "completion": 0,
-          "steps": [
-            {
-              "libelle": "Gestion des dépendances",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Construction des livrables",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Cycle de vie des composants",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Gestion des versions",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Gestion des livraisons",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Gestion des branches",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Qualité des livrables",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Méthodologie",
-      "subparts": [
+            "title": "CI / CD",
+            "subparts": [{
+                "name": "Basic",
+
+                "iswip": true,
+                "author": "GORTAIS, Gwendal",
+                "steps": [{
+                        "libelle": "Gestion des dépendances",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        "libelle": "Construction des livrables",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        "libelle": "Cycle de vie des composants",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        "libelle": "Gestion des versions",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        "libelle": "Gestion des livraisons",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        "libelle": "Gestion des branches",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        "libelle": "Qualité des livrables",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    }
+                ]
+            }]
+        },
         {
-          "name": "Projet",
-          "steps": [
-            {
-              "libelle": "Typologie des tests (TU/TI…)",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Couverture de test (mesure)",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Gestion des JDD de test",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Documentation",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Partage de la connaissance",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "TDD, BDD, Pair Programming",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-              "libelle": "Revue de code",
-              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            }
-          ]
+            "title": "Méthodologie",
+            "subparts": [{
+                "name": "Projet",
+                "iswip": true,
+                "author": "GORTAIS, Gwendal",
+                "steps": [{
+                        "libelle": "Typologie des tests (TU/TI…)",
+                        "desc": "To add ngx-markdown library to your `package.json` use the following command. \n ```bash \n npm install ngx-markdown --save \n```"
+                    },
+                    {
+                        "libelle": "Couverture de test (mesure)",
+                        "desc": "To activate [Prism.js](http://prismjs.com/) syntax highlight you will need to include... \n - prism.js core library - `node_modules/prismjs/prism.js` file \n - a highlight css theme - from `node_modules/prismjs/themes` directory \n - desired code language syntax files - from `node_modules/prismjs/components` directory"
+                    },
+                    {
+                        "libelle": "Gestion des JDD de test",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        "libelle": "Documentation",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        "libelle": "Partage de la connaissance",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        "libelle": "TDD, BDD, Pair Programming",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        "libelle": "Revue de code",
+                        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    }
+                ]
+            }]
         }
-      ]
-    }
-  ]
+    ]
 }
