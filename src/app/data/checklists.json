@@ -65,6 +65,49 @@
                     ]
                 },
                 {
+                  "name": "DOD Pull Request",
+
+                  "iswip": false,
+                  "author": "Kevin Jaouen",
+                  "steps": [{
+                          "libelle": "Le code compile",
+                          "desc": ""
+                      },
+                      {
+                          "libelle": "La revue a été effectuée par une autre personne que celle ayant effectuée le développement",
+                          "desc": ""
+                      },
+                      {
+                          "libelle": "Les normes de développement sont respectées",
+                          "desc": "Pré-requis : les normes de développement ont été partagées avec l'équipe"
+                      },
+                      {
+                          "libelle": "La couverture de test respect le seuil minimal défini par l'équipe",
+                          "desc": "Pré-requis : Définir un seuil minimal de couverture."
+                      },
+                      {
+                          "libelle": "Les tests passent",
+                          "desc": ""
+                      },
+                      {
+                          "libelle": "La quality gate ne remonte pas de violations bloquantes ou critiques",
+                          "desc": ""
+                      },
+                      {
+                          "libelle": "Les développements répondent aux exigences fonctionnelles",
+                          "desc": "Autant techniquement (architecture & performance) que fonctionnellement"
+                      },
+                      {
+                          "libelle": "Toutes les remarques effectuées lors de la revue ont été prises en compte",
+                          "desc": ""
+                      },
+                      {
+                          "libelle": "Si un changelog est présent, il doit être mise à jour",
+                          "desc": ""
+                      }
+                  ]
+              },
+                {
                     "name": "DOD API",
 
                     "iswip": true,
