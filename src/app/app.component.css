@@ -33,6 +33,27 @@
     cursor: pointer;
 }
 
+.licence-footer {
+    display: contents;
+}
+
+.licence-footer div {
+    align-self: left;
+    text-align: left;
+    justify-self: left;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.licence-footer a {
+    display: contents;
+}
+
+.licence-footer img {
+    align-self: center;
+    justify-self: right;
+}
+
 
 /* Responsive Styles */
 

@@ -22,8 +22,20 @@
         </mat-toolbar>
         <router-outlet></router-outlet>
 
-        <mat-toolbar id="footer" color="primary">
-            <a class="footer-button" mat-raised-button target="_blank" href="https://github.com/Delivery-Booster-League/software-checkup">Github de l'application  <img id="github-logo" src="assets/GitHub-Mark-32px.png"/></a>
+        <mat-toolbar color="primary">
+            <mat-toolbar-row id="footer">
+                <a class="footer-button" mat-raised-button target="_blank" href="https://github.com/Delivery-Booster-League/software-checkup">Github de l'application  <img id="github-logo" src="assets/GitHub-Mark-32px.png"/></a>
+            </mat-toolbar-row>
+            <mat-toolbar-row>
+                <div class="licence-footer">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+                    </a>
+                    <div>
+                        This project is licensed under a <br/><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
+                    </div>
+                </div>
+            </mat-toolbar-row>
         </mat-toolbar>
 
         <button class="theme-changer" mat-fab color="accent" (click)="toggleDarkTheme()">
