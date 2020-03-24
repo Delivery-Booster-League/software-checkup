@@ -54,3 +54,8 @@ h1 {
 .activeDrag .ghostCircle {
     display: none;
 }
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

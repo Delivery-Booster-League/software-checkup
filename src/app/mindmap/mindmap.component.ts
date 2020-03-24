@@ -14,7 +14,7 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
 
   ngAfterViewInit(): void {
     if (!this.data) { return; }
-    this.createChart();
+    this.createChart("default");
   }
 
   @ViewChild('chart')
@@ -24,18 +24,31 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
 
   margin = { top: 20, right: 20, bottom: 30, left: 40 };
 
+  buttonState:boolean = true;
+
   constructor(private mindmapService: MindmapService,private router: Router ) {
   }
 
   ngOnChanges(): void {
     if (!this.data) { return; }
 
-    this.createChart();
+    this.createChart("default");
   }
   onResize() {
-    this.createChart();
+    this.createChart("default");
   }
-  private createChart(): void {
+
+  toggleButton(){
+    this.buttonState = !this.buttonState
+  }
+
+  openAllNode(){
+    this.createChart("openAll");
+  }
+  closeAllNode(){
+    this.createChart("closeAll");
+  }
+  private createChart(openMode:string): void {
     d3.select('svg').remove();
     // Set the dimensions and margins of the diagram
     const element = this.chartContainer.nativeElement;
@@ -67,7 +80,13 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
     root.y0 = 0;
 
     // Collapse after the second level
-    root.children.forEach(collapse);
+    if(openMode == "default"){
+      root.children.forEach(collapse);
+    }
+    else if(openMode == "closeAll"){
+      collapseFromLeaf(root);
+    }
+    
 
     update(root,this.router);
 
@@ -80,6 +99,15 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
       }
     }
 
+        // Collapse the node and all it's children
+    function collapseFromLeaf(d) {
+      if (d.children) {
+        d._children = d.children
+        d._children.forEach(collapse)
+        d.children = null
+        }
+      }
+
     function update(source,router:any) {
 
       // Assigns the x and y position for the nodes
@@ -90,7 +118,10 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
         links = treeData.descendants().slice(1);
 
       // Normalize for fixed-depth.
-      nodes.forEach(function (d) { d.y = d.depth * 180 });
+      nodes.forEach(function (d) {
+        d.y = d.depth * 200;
+      });
+
 
       // ****************** Nodes section ***************************
 
@@ -129,7 +160,6 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
         })
         .attr("target", "_blank")
         .on('click', (d:any)=>{
-          console.log(d)
           router.navigate(['mind-map', d.data.article])
         })
         .text(function (d: any) { return d.data.name; });
@@ -146,7 +176,9 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
 
       // Update the node attributes and style
       nodeUpdate.select('circle.node')
-        .attr('r', 10)
+        .attr('r', function (d: any) {
+          return d.children || d._children ? 9 : 3;
+        })
         .style("fill", function (d: any) {
           return d._children ? "lightsteelblue" : "#fff";
         })

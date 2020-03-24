@@ -16,7 +16,6 @@ export class AppComponent {
     } else {
       this.isMobileResolution = false;
     }
-    console.log(this.isMobileResolution);
   }
 
   toggleDarkTheme(){

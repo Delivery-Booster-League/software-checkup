@@ -27,24 +27,23 @@
                     },
                     {
                         "name": "scikit learn",
-                        "article": "test",
-                        "children": [{
-                                "name": "data visualization",
-                                "article": "test"
-                            },
-                            {
-                                "name": "Hadoop",
-                                "article": "test"
-                            },
-                            {
-                                "name": "Spark",
-                                "article": "test"
-                            },
-                            {
-                                "name": "map reduce",
-                                "article": "test"
-                            }
-                        ]
+                        "article": "test"
+                    },
+                    {
+                        "name": "data visualization",
+                        "article": "test"
+                    },
+                    {
+                        "name": "Hadoop",
+                        "article": "test"
+                    },
+                    {
+                        "name": "Spark",
+                        "article": "test"
+                    },
+                    {
+                        "name": "map reduce",
+                        "article": "test"
                     }
                 ]
             },
