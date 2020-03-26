@@ -85,10 +85,19 @@ console.log(root);
     .data(root.descendants().slice(1))
     .join("circle")
       .attr("fill", (d:any) => d.children ? color(d.depth) : "white")
-      .attr("pointer-events", (d:any) => !d.children ? "none" : null)
       .on("mouseover", function() { d3.select(this).attr("stroke", "#000"); })
       .on("mouseout", function() { d3.select(this).attr("stroke", null); })
-      .on("click", d => focus !== d && (zoom(d), d3.event.stopPropagation()));
+      .on("click", (d:any) => {        
+        if(!d.data.children&&focus==d.parent){     
+          this.router.navigate(["mind-map", d.data.article])
+        }
+        else if(!d.data.children){
+          focus !== d.parent && (zoom(d.parent), d3.event.stopPropagation())
+        }
+        else{
+          focus !== d && (zoom(d), d3.event.stopPropagation())
+        }
+      });
 
   const label :any = svg.append("g")
       .style("font", "15px sans-serif")
@@ -100,10 +109,8 @@ console.log(root);
     .join("text")
       .style("fill-opacity", (d:any) => d.parent === root ? 1 : 0)
       .style("display", (d:any) => d.parent === root ? "inline" : "none")
-      .text((d:any) => d.data.name)
-      .on('click', (d:any)=>{
-        this.router.navigate(['mind-map', d.data.article])
-      })
+      .text((d:any) => d.data.name);
+
 
   zoomTo([root.x, root.y, root.r * 2]);
 
