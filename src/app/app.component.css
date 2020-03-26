@@ -54,6 +54,10 @@
     justify-self: right;
 }
 
+.licence-link {
+    overflow: hidden;
+}
+
 
 /* Responsive Styles */
 

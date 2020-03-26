@@ -48,219 +48,93 @@ export class MindmapComponent implements OnChanges, AfterViewInit {
   closeAllNode(){
     this.createChart("closeAll");
   }
-  private createChart(openMode:string): void {
+
+  private pack(data,width,heigth){
+    return d3.pack()
+    .size([width, heigth])
+    .padding(3)
+  (d3.hierarchy(data)
+    .sum(d => d.children? d.children.lenth:1)
+    .sort((a, b) => b.value - a.value))
     d3.select('svg').remove();
+  }
+
+  private createChart(openMode:string): void {
+
+
     // Set the dimensions and margins of the diagram
     const element = this.chartContainer.nativeElement;
+    var format = d3.format(",d");
 
-    var margin = { top: 20, right: 90, bottom: 30, left: 160 },
-      width = element.offsetWidth - margin.left - margin.right,
-      height = element.offsetHeight - margin.top - margin.bottom;
+    const root :any = this.pack(this.data,element.offsetWidth, element.offsetHeight);
+  let focus = root;
+  let view;
 
-    // append the svg object to the body of the page
-    // appends a 'group' element to 'svg'
-    // moves the 'group' element to the top left margin
-    var svg = d3.select("#chart").append("svg")
-      .attr("width", width + margin.right + margin.left)
-      .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-      .attr("transform", "translate("
-        + margin.left + "," + margin.top + ")");
+  var color = d3.interpolateCool;
+  var format = d3.format(",d")
+  const svg = d3.select("#chart").append("svg")
+      .attr("viewBox", `-${element.offsetWidth  / 2} -${element.offsetHeight / 2} ${element.offsetWidth } ${element.offsetHeight}`)
+      .style("display", "block")
+      .style("margin", "0 -14px")
+      .style("background", "#FFFF")
+      .style("cursor", "pointer")
+      .on("click", () => zoom(root));
+console.log(root);
+  const node = svg.append("g")
+    .selectAll("circle")
+    .data(root.descendants().slice(1))
+    .join("circle")
+      .attr("fill", (d:any) => d.children ? color(d.depth) : "white")
+      .attr("pointer-events", (d:any) => !d.children ? "none" : null)
+      .on("mouseover", function() { d3.select(this).attr("stroke", "#000"); })
+      .on("mouseout", function() { d3.select(this).attr("stroke", null); })
+      .on("click", d => focus !== d && (zoom(d), d3.event.stopPropagation()));
 
-    var i = 0,
-      duration = 750,
-      root;
+  const label :any = svg.append("g")
+      .style("font", "15px sans-serif")
+      .attr("pointer-events", "none")
+      .attr("text-anchor", "middle")
 
-    // declares a tree layout and assigns the size
-    var treemap = d3.tree().size([height, width]);
+    .selectAll("text")
+    .data(root.descendants())
+    .join("text")
+      .style("fill-opacity", (d:any) => d.parent === root ? 1 : 0)
+      .style("display", (d:any) => d.parent === root ? "inline" : "none")
+      .text((d:any) => d.data.name)
+      .on('click', (d:any)=>{
+        this.router.navigate(['mind-map', d.data.article])
+      })
 
-    // Assigns parent, children, height, depth
-    root = d3.hierarchy(this.data, function (d) { return d.children; });
-    root.x0 = height / 2;
-    root.y0 = 0;
+  zoomTo([root.x, root.y, root.r * 2]);
 
-    // Collapse after the second level
-    if(openMode == "default"){
-      root.children.forEach(collapse);
-    }
-    else if(openMode == "closeAll"){
-      collapseFromLeaf(root);
-    }
-    
+  function zoomTo(v) {
+    const k = element.offsetWidth  / v[2];
 
-    update(root,this.router);
+    view = v;
 
-    // Collapse the node and all it's children
-    function collapse(d) {
-      if (d.children) {
-        d._children = d.children
-        d._children.forEach(collapse)
-        d.children = null
-      }
-    }
+    label.attr("transform", (d:any) => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`);
+    node.attr("transform", (d:any) => `translate(${(d.x - v[0]) * k},${(d.y - v[1]) * k})`);
+    node.attr("r", (d:any) => d.r * k);
+  }
 
-        // Collapse the node and all it's children
-    function collapseFromLeaf(d) {
-      if (d.children) {
-        d._children = d.children
-        d._children.forEach(collapse)
-        d.children = null
-        }
-      }
+  function zoom(d) {
+    const focus0 = focus;
 
-    function update(source,router:any) {
+    focus = d;
 
-      // Assigns the x and y position for the nodes
-      var treeData = treemap(root);
-
-      // Compute the new tree layout.
-      var nodes = treeData.descendants(),
-        links = treeData.descendants().slice(1);
-
-      // Normalize for fixed-depth.
-      nodes.forEach(function (d) {
-        d.y = d.depth * 200;
-      });
-
-
-      // ****************** Nodes section ***************************
-
-      // Update the nodes...
-      var node: any = svg.selectAll('g.node')
-        .data(nodes, function (d: any) { return d.id || (d.id = ++i); });
-
-      // Enter any new modes at the parent's previous position.
-      var nodeEnter = node.enter().append('g')
-        .attr('class', 'node')
-        .attr("transform", function (d) {
-          return "translate(" + source.y0 + "," + source.x0 + ")";
-        });
-        
-
-      // Add Circle for the nodes
-      nodeEnter.append('circle')
-        .attr('class', 'node')
-        .attr('r', 1e-6)
-        .on('click', click)
-        .style("fill", function (d: any) {
-          return d._children ? "lightsteelblue" : "#fff";
+    const transition = svg.transition()
+        .duration(d3.event.altKey ? 7500 : 750)
+        .tween("zoom", d => {
+          const i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2]);
+          return t => zoomTo(i(t));
         });
 
-      // Add labels for the nodes
-      nodeEnter.append('text')
-        .attr("dy", ".35em")
-        .attr("x", function (d: any) {
-          return d.children || d._children ? -13 : 13;
-        })
-        .attr("text-anchor", function (d: any) {
-          return d.children || d._children ? "end" : "start";
-        })
-        .attr("xlink:href", (d: any) => {
-          return d.data.link
-        })
-        .attr("target", "_blank")
-        .on('click', (d:any)=>{
-          router.navigate(['mind-map', d.data.article])
-        })
-        .text(function (d: any) { return d.data.name; });
-
-      // UPDATE
-      var nodeUpdate = nodeEnter.merge(node);
-
-      // Transition to the proper position for the node
-      nodeUpdate.transition()
-        .duration(duration)
-        .attr("transform", function (d: any) {
-          return "translate(" + d.y + "," + d.x + ")";
-        });
-
-      // Update the node attributes and style
-      nodeUpdate.select('circle.node')
-        .attr('r', function (d: any) {
-          return d.children || d._children ? 9 : 3;
-        })
-        .style("fill", function (d: any) {
-          return d._children ? "lightsteelblue" : "#fff";
-        })
-        .text(function (d: any) { d._children ? "+" : "-"; })
-        .attr('cursor', 'pointer');
-
-
-      // Remove any exiting nodes
-      var nodeExit = node.exit().transition()
-        .duration(duration)
-        .attr("transform", function (d: any) {
-          return "translate(" + source.y + "," + source.x + ")";
-        })
-        .remove();
-
-      // On exit reduce the node circles size to 0
-      nodeExit.select('circle')
-        .attr('r', 1e-6);
-
-      // On exit reduce the opacity of text labels
-      nodeExit.select('text')
-        .style('fill-opacity', 1e-6);
-
-      // ****************** links section ***************************
-
-      // Update the links...
-      var link: any = svg.selectAll('path.link')
-        .data(links, function (d: any) { return d.id; });
-
-      // Enter any new links at the parent's previous position.
-      var linkEnter = link.enter().insert('path', "g")
-        .attr("class", "link")
-        .attr('d', function (d) {
-          var o = { x: source.x0, y: source.y0 }
-          return diagonal(o, o)
-        });
-
-      // UPDATE
-      var linkUpdate = linkEnter.merge(link);
-
-      // Transition back to the parent element position
-      linkUpdate.transition()
-        .duration(duration)
-        .attr('d', function (d) { return diagonal(d, d.parent) });
-
-      // Remove any exiting links
-      var linkExit = link.exit().transition()
-        .duration(duration)
-        .attr('d', function (d) {
-          var o = { x: source.x, y: source.y }
-          return diagonal(o, o)
-        })
-        .remove();
-
-      // Store the old positions for transition.
-      nodes.forEach(function (d: any) {
-        d.x0 = d.x;
-        d.y0 = d.y;
-      });
-
-      // Creates a curved (diagonal) path from parent to the child nodes
-      function diagonal(s, d) {
-
-        var path = `M ${s.y} ${s.x}
-            C ${(s.y + d.y) / 2} ${s.x},
-              ${(s.y + d.y) / 2} ${d.x},
-              ${d.y} ${d.x}`
-
-        return path
-      }
-
-      // Toggle children on click.
-      function click(d) {
-        if (d.children) {
-          d._children = d.children;
-          d.children = null;
-        } else {
-          d.children = d._children;
-          d._children = null;
-        }
-        update(d,router);
-      }
-    }
+    label
+      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
+      .transition(transition)
+        .style("fill-opacity", d => d.parent === focus ? 1 : 0)
+        .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
+        .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+  }
   }
 }
