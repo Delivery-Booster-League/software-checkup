@@ -13,7 +13,8 @@ h1 {
 }
 
 #chart {
-    height: 100vh;
+    height: 932px;
+    width: 932px;
 }
 
 .node {

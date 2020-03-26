@@ -51,6 +51,51 @@
                 "name": "DevOps",
                 "article": "test",
                 "children": [{
+                        "name": "Cloud",
+                        "children": [{
+                                "name": "Provisionning",
+                                "article": "test"
+                            },
+                            {
+                                "name": "Computation",
+                                "article": "test"
+                            },
+                            {
+                                "name": "Infrastructure as a service",
+                                "article": "test"
+                            },
+                            {
+                                "name": "Platform as a service",
+                                "article": "test"
+                            },
+                            {
+                                "name": "Container as a service",
+                                "article": "test",
+                                "children": [{
+                                        "name": "Kubernetes",
+                                        "article": "test"
+                                    },
+                                    {
+                                        "name": "Docker",
+                                        "article": "test"
+                                    },
+                                    {
+                                        "name": "Istio",
+                                        "article": "test"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Function as a service",
+                                "article": "test",
+                                "children": [{
+                                    "name": "Serverless",
+                                    "article": "test"
+                                }]
+                            }
+                        ]
+                    },
+                    {
                         "name": "Infrastructure as code",
                         "article": "test"
                     },
@@ -102,51 +147,6 @@
                     {
                         "name": "Monitoring",
                         "article": "test"
-                    }
-                ]
-            },
-            {
-                "name": "Cloud",
-                "children": [{
-                        "name": "Provisionning",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Computation",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Infrastructure as a service",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Platform as a service",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Container as a service",
-                        "article": "test",
-                        "children": [{
-                                "name": "Kubernetes",
-                                "article": "test"
-                            },
-                            {
-                                "name": "Docker",
-                                "article": "test"
-                            },
-                            {
-                                "name": "Istio",
-                                "article": "test"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Function as a service",
-                        "article": "test",
-                        "children": [{
-                            "name": "Serverless",
-                            "article": "test"
-                        }]
                     }
                 ]
             },
