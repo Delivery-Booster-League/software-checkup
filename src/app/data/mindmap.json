@@ -3,18 +3,38 @@
         "name": "Modern Delivery",
         "children": [{
                 "name": "Event Oriented Architecture",
-                "article": "test",
+                "article": "event-architectures",
                 "children": [{
-                        "name": "At least once",
-                        "article": "test"
+                        "name": "Patterns",
+                        "article": "event-architectures",
+                        "children": [{
+                            "name": "Command Query Responsibility Segregation (CQRS)",
+                            "article": "event-architectures"
+                        },{
+                            "name": "Event Notification",
+                            "article": "event-architectures"
+                        }, {
+                            "name": "Event Sourcing",
+                            "article": "event-architectures"
+                        }, {
+                            "name": "Event Carried State Transfer",
+                            "article": "event-architectures"
+                        }
+                        ]
                     },
                     {
-                        "name": "Consistency VS Availability",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Kafka Connect",
-                        "article": "test"
+                        "name": "Message Broker",
+                        "article": "event-architectures",
+                        "children": [{
+                            "name": "Kafka",
+                            "article": "event-architectures"
+                        }, {
+                            "name": "Amazon SQS",
+                            "article": "event-architectures"                            
+                        },{
+                            "name": "RabbitMQ",
+                            "article": "event-architectures"
+                        }]
                     }
                 ]
             },
