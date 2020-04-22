@@ -39,30 +39,76 @@
                 ]
             },
             {
-                "name": "Big Data",
-                "article": "test",
+                "name": "Automation",
+                "article": "automation",
                 "children": [{
-                        "name": "datascience",
-                        "article": "test"
+                        "name": "Machine Learning",
+                        "article": "automation"
+                    }, {
+                        "name": "AI",
+                        "article": "automation"
+                    }, {
+                        "name": "RPA",
+                        "article": "automation",
+                        "children": [{
+                            "name": "UIPath",
+                            "article": "automation"
+                        }, {
+                            "name": "Automagica",
+                            "article": "automation"
+                        }]
                     },
                     {
-                        "name": "scikit learn",
-                        "article": "test",
+                        "name": "Big Data",
+                        "article": "automation",
                         "children": [{
-                                "name": "data visualization",
-                                "article": "test"
+                                "name": "Opendata",
+                                "article": "automation"
                             },
                             {
-                                "name": "Hadoop",
-                                "article": "test"
+                                "name": "Dataviz",
+                                "article": "automation",
+                                "children": [{
+                                    "name": "D3.js",
+                                    "article": "automation"
+                                }, {
+                                    "name": "React-vis",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Chart.js",
+                                    "article": "automation"
+                                }]
                             },
                             {
-                                "name": "Spark",
-                                "article": "test"
+                                "name": "Datascience",
+                                "article": "automation"
                             },
                             {
-                                "name": "map reduce",
-                                "article": "test"
+                                "name": "Storage",
+                                "article": "automation"
+                            },
+                            {
+                                "name": "Query Engine",
+                                "article": "automation"
+                            },
+                            {
+                                "name": "Event Collector",
+                                "article": "automation"
+                            },
+                            {
+                                "name": "Stream Processing",
+                                "article": "automation",
+                                "children": [{
+                                    "name": "Stratio Sparta",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Spark Streaming",
+                                    "article": "automation"
+                                }]
+                            },
+                            {
+                                "name": "MapR",
+                                "article": "automation"
                             }
                         ]
                     }
@@ -70,59 +116,189 @@
             },
             {
                 "name": "DevOps",
-                "article": "test",
+                "article": "devops",
                 "children": [{
-                        "name": "Infrastructure as code",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Containers",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Continuous Integration",
-                        "article": "test"
-                    },
-                    {
                         "name": "Continuous Delivery",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Main line development",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Feature Flipping",
-                        "article": "test",
+                        "article": "devops",
                         "children": [{
-                            "name": "FF4J",
-                            "article": "test"
+                            "name": "Pipeline as code",
+                            "article": "devops"
+                        }, {
+                            "name": "Continuous Integration",
+                            "article": "devops",
+                            "children": [{
+                                "name": "Concourse",
+                                "article": "devops"
+                            }, {
+                                "name": "Gitlab-ci",
+                                "article": "devops"
+                            }, {
+                                "name": "Jenkins",
+                                "article": "devops"
+                            }, {
+                                "name": "ArgoCD",
+                                "article": "devops"
+                            }]
+                        }, {
+                            "name": "Source control",
+                            "article": "devops",
+                            "children": [{
+                                "name": "Git Ops",
+                                "article": "devops"
+                            }, {
+                                "name": "Release Management",
+                                "article": "devops"
+                            }, {
+                                "name": "Git Flow",
+                                "article": "devops"
+                            }]
+                        }, {
+                            "name": "Canary Release",
+                            "article": "devops"
+                        }, {
+                            "name": "BlueGreen Deployment",
+                            "article": "devops"
+                        }, {
+                            "name": "Infrastructure as code",
+                            "article": "devops",
+                            "children": [{
+                                "name": "Pulumi",
+                                "article": "devops"
+                            }, {
+                                "name": "Terraform",
+                                "article": "devops"
+                            }, {
+                                "name": "CloudFormation",
+                                "article": "devops"
+                            }]
                         }]
-                    },
-                    {
-                        "name": "Pipeline as code",
-                        "article": "test"
+                    }, {
+                        "name": "Automated Testing",
+                        "article": "devops",
+                        "children": [{
+                            "name": "Performance Test",
+                            "article": "devops"
+                        }, {
+                            "name": "Stress Test", 
+                            "article": "devops"
+                        },{
+                            "name": "Load Test", 
+                            "article": "devops"
+                        }, {
+                            "name": "GUI Tests", 
+                            "article": "devops",
+                            "children": [{
+                                "name": "Selenium webdriver",
+                                "article": "devops"
+                            }, {
+                                "name": "Cypress.io",
+                                "article": "devops"
+                            }]
+                        }, {
+                            "name": "SOA / ROA Testing", 
+                            "article": "devops",
+                            "children": [{
+                                "name": "SoapUI",
+                                "article": "devops"
+                            }, {
+                                "name": "JMeter",
+                                "article": "devops"
+                            }, {
+                                "name": "KarateJS",
+                                "article": "devops"
+                            }]
+                        }, {
+                            "name": "AB Testing", 
+                            "article": "devops"
+                        }, {
+                            "name": "Chaos Engineering", 
+                            "article": "devops", 
+                            "children": [{
+                                "name": "Monkey Testing",
+                                "article": "devops"
+                            }]
+                        }]
                     }
                 ]
             },
             {
-                "name": "RPA",
-                "article": "test"
-            },
-            {
-                "name": "Machine Learning",
-                "article": "test"
-            },
-            {
-                "name": "Supervision",
-                "article": "test",
-                "children": [{
-                        "name": "Tracing",
-                        "article": "test"
+                "name": "Monitoring",
+                "article": "monitoring",
+                "children": [
+                    {
+                        "name": "ELK",
+                        "article": "monitoring"
+                    }, {
+                        "name": "Datadog",
+                        "article": "monitoring"
+                    }, {
+                        "name": "Amazon Cloudwatch",
+                        "article": "monitoring"
+                    }, {
+                        "name": "Stackdriver",
+                        "article": "monitoring"
                     },
                     {
-                        "name": "Monitoring",
-                        "article": "test"
+                        "name": "Supervision",
+                        "article": "monitoring",
+                        "children": [{
+                            "name": "Health Checks",
+                            "article": "monitoring",
+                            "children": [{
+                                "name": "Liveness",
+                                "article": "monitoring"
+                            }, {
+                                "name": "Readyness",
+                                "article": "monitoring"
+                            }]
+                        }]
+                    },
+                    {
+                        "name": "Metrology",
+                        "article": "monitoring",
+                        "children": [{
+                            "name": "Metrics",
+                            "article": "monitoring",
+                            "children": [{
+                                "name": "Prometheus",
+                                "article": "monitoring"
+                            },{
+                                "name": "Graphite",
+                                "article": "monitoring"
+                            }, {
+                                "name": "Zabbix",
+                                "article": "monitoring"
+                            }]
+                        }, {
+                            "name": "Tracing",
+                            "article": "monitoring",
+                            "children": [{
+                                "name": "Zipkin",
+                                "article": "monitoring"
+                            }, {
+                                "name": "Jaeger",
+                                "article": "monitoring"
+                            }, {
+                                "name": "dynatrace",
+                                "article": "monitoring"
+                            }, {
+                                "name": "AppDynamics",
+                                "article": "monitoring"
+                            }]
+                        }, {
+                            "name": "Logging",
+                            "article": "monitoring",
+                            "children": [{
+                                "name": "Splunk",
+                                "article": "monitoring"
+                            }, {
+                                "name": "FluentD",
+                                "article": "monitoring"
+                            }, {
+                                "name": "Graylog",
+                                "article": "monitoring"
+                            }]
+                        }]
                     }
                 ]
             },
