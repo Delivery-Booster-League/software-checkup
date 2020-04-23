@@ -74,6 +74,20 @@
                                 "article": "automation"
                             },
                             {
+                                "name": "ETL",
+                                "article": "automation",
+                                "children": [{
+                                    "name": "Talend ETL",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Datastage",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Informatica",
+                                    "article": "automation"
+                                }]                                
+                            },
+                            {
                                 "name": "Storage",
                                 "article": "automation",
                                 "children": [
@@ -372,6 +386,24 @@
                                     "article": "event-architectures"                            
                                 },{
                                     "name": "RabbitMQ",
+                                    "article": "event-architectures"
+                                }]
+                            }, 
+                            {
+                                "name": "Workflow",
+                                "article": "event-architectures",
+                                "children": [{
+                                    "name": "Zappier",
+                                    "article": "event-architectures"
+                                }, {
+                                    "name": "n8n",
+                                    "article": "event-architectures"
+
+                                }, {
+                                    "name": "Apache Camel",
+                                    "article": "event-architectures"
+                                }, {
+                                    "name": "jbpm", 
                                     "article": "event-architectures"
                                 }]
                             }
