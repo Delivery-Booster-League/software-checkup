@@ -1,184 +1,612 @@
 {
     "DATA": {
         "name": "Modern Delivery",
-        "children": [{
-                "name": "Event Oriented Architecture",
-                "article": "test",
+        "children": [
+            {
+                "name": "Software Craftmanship",
+                "article": "software-craftmanship",
                 "children": [{
-                        "name": "At least once",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Consistency VS Availability",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Kafka Connect",
-                        "article": "test"
-                    }
-                ]
+                    "name": "TDD",
+                    "article": "software-craftmanship"
+                }, {
+                    "name": "BDD", 
+                    "article": "software-craftmanship"
+                }, {
+                    "name": "DDD",
+                    "article": "software-craftmanship"
+                }, {
+                    "name": "SOLID",
+                    "article": "software-craftmanship"
+                }, {
+                    "name": "Clean Code",
+                    "article": "software-craftmanship"
+                }, {
+                    "name": "Pair Programming",
+                    "article": "software-craftmanship"
+                }, {
+                    "name": "Architecture Hexagonale",
+                    "article": "software-craftmanship"
+                }]
             },
             {
-                "name": "Big Data",
-                "article": "test",
+                "name": "Automation",
+                "article": "automation",
                 "children": [{
-                        "name": "datascience",
-                        "article": "test"
+                        "name": "Machine Learning",
+                        "article": "automation"
+                    }, {
+                        "name": "AI",
+                        "article": "automation"
+                    }, {
+                        "name": "RPA",
+                        "article": "automation",
+                        "children": [{
+                            "name": "UIPath",
+                            "article": "automation"
+                        }, {
+                            "name": "Automagica",
+                            "article": "automation"
+                        }]
                     },
                     {
-                        "name": "scikit learn",
-                        "article": "test"
-                    },
-                    {
-                        "name": "data visualization",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Hadoop",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Spark",
-                        "article": "test"
-                    },
-                    {
-                        "name": "map reduce",
-                        "article": "test"
+                        "name": "Big Data",
+                        "article": "automation",
+                        "children": [{
+                                "name": "Opendata",
+                                "article": "automation"
+                            },
+                            {
+                                "name": "Dataviz",
+                                "article": "automation",
+                                "children": [{
+                                    "name": "D3.js",
+                                    "article": "automation"
+                                }, {
+                                    "name": "React-vis",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Chart.js",
+                                    "article": "automation"
+                                }]
+                            },
+                            {
+                                "name": "Datascience",
+                                "article": "automation"
+                            },
+                            {
+                                "name": "ETL",
+                                "article": "automation",
+                                "children": [{
+                                    "name": "Talend ETL",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Datastage",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Informatica",
+                                    "article": "automation"
+                                }]                                
+                            },
+                            {
+                                "name": "Storage",
+                                "article": "automation",
+                                "children": [
+                                {
+                                    "name": "Database Migration",
+                                    "article": "automation",
+                                    "children": [{
+                                            "name": "flyway",
+                                            "article": "automation"
+                                        }, {
+                                            "name": "Liquibase",
+                                            "article": "automation"
+                                        }, {
+                                            "name": "DBMaintain",
+                                            "article": "automation"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Hadoop",
+                                    "article": "automation"
+                                }, 
+                                {
+                                    "name": "CouchDB",
+                                    "article": "automation"
+                                }, {
+                                    "name": "PouchDB",
+                                    "article": "automation"
+                                }, {
+                                    "name": "MongoDB",
+                                    "article": "automation"
+                                }, {
+                                    "name": "PostgreSQL",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Mysql",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Oracle",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Cassandra",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Cassandra",
+                                    "article": "automation"
+                                }]
+                            },
+                            {
+                                "name": "Query Engine",
+                                "article": "automation"
+                            },
+                            {
+                                "name": "Event Collector",
+                                "article": "automation"
+                            },
+                            {
+                                "name": "Stream Processing",
+                                "article": "automation",
+                                "children": [{
+                                    "name": "Stratio Sparta",
+                                    "article": "automation"
+                                }, {
+                                    "name": "Spark Streaming",
+                                    "article": "automation"
+                                }]
+                            },
+                            {
+                                "name": "MapR",
+                                "article": "automation"
+                            }
+                        ]
                     }
                 ]
             },
             {
                 "name": "DevOps",
-                "article": "test",
+                "article": "devops",
                 "children": [{
-                        "name": "Cloud",
+                        "name": "Continuous Delivery",
+                        "article": "devops",
                         "children": [{
-                                "name": "Provisionning",
-                                "article": "test"
-                            },
-                            {
-                                "name": "Computation",
-                                "article": "test"
-                            },
-                            {
-                                "name": "Infrastructure as a service",
-                                "article": "test"
-                            },
-                            {
-                                "name": "Platform as a service",
-                                "article": "test"
-                            },
-                            {
-                                "name": "Container as a service",
-                                "article": "test",
+                            "name": "Pipeline as code",
+                            "article": "devops"
+                            }, {
+                            "name": "Continuous Integration",
+                            "article": "devops",
+                            "children": [{
+                                "name": "Concourse",
+                                "article": "devops"
+                            }, {
+                                "name": "Gitlab-ci",
+                                "article": "devops"
+                            }, {
+                                "name": "Jenkins",
+                                "article": "devops"
+                            }, {
+                                "name": "ArgoCD",
+                                "article": "devops"
+                            }]
+                        }, {
+                            "name": "Source control",
+                            "article": "devops",
+                            "children": [{
+                                "name": "Git Ops",
+                                "article": "devops"
+                            }, {
+                                "name": "Release Management",
+                                "article": "devops"
+                            }, {
+                                "name": "Git Flow",
+                                "article": "devops"
+                            }]
+                        }, {
+                            "name": "Canary Release",
+                            "article": "devops"
+                        }, {
+                            "name": "BlueGreen Deployment",
+                            "article": "devops"
+                        }, {
+                            "name": "Infrastructure as code",
+                            "article": "devops",
+                            "children": [{
+                                "name": "Pulumi",
+                                "article": "devops"
+                            }, {
+                                "name": "Terraform",
+                                "article": "devops"
+                            }, {
+                                "name": "CloudFormation",
+                                "article": "devops"
+                            }]
+                        }]
+                    }, {
+                        "name": "Automated Testing",
+                        "article": "devops",
+                        "children": [{
+                            "name": "Load Tests", 
+                            "article": "devops",
+                            "children": [{
+                                "name": "JMeter",
+                                "article": "devops"
+                            }, {
+                                "name": "Gatling",
+                                "article": "devops"
+                            }, {
+                                "name": "LoadRunner",
+                                "article": "devops"
+                            }, {
+                                "name": "Apache Bench",
+                                "article": "devops"
+                            }, {
+                                "name": "Siege",
+                                "article": "devops"
+                            }, {
+                                "name": "The Grinder",
+                                "article": "devops"
+                            }]
+                        }, {
+                            "name": "GUI Tests", 
+                            "article": "devops",
+                            "children": [{
+                                "name": "Selenium webdriver",
+                                "article": "devops"
+                            }, {
+                                "name": "Cypress.io",
+                                "article": "devops"
+                            }]
+                        }, {
+                            "name": "SOA / ROA Testing", 
+                            "article": "devops",
+                            "children": [{
+                                "name": "SoapUI",
+                                "article": "devops"
+                            }, {
+                                "name": "JMeter",
+                                "article": "devops"
+                            }, {
+                                "name": "KarateJS",
+                                "article": "devops"
+                            }]
+                        }, {
+                            "name": "AB Testing", 
+                            "article": "devops"
+                        }, {
+                            "name": "Chaos Engineering", 
+                            "article": "devops", 
+                            "children": [{
+                                "name": "Monkey Testing",
+                                "article": "devops"
+                            }]
+                        }]
+                    }
+                ]
+            },
+            {
+                "name": "Monitoring",
+                "article": "monitoring",
+                "children": [
+                    {
+                        "name": "ELK",
+                        "article": "monitoring"
+                    }, {
+                        "name": "Datadog",
+                        "article": "monitoring"
+                    }, {
+                        "name": "Amazon Cloudwatch",
+                        "article": "monitoring"
+                    }, {
+                        "name": "Stackdriver",
+                        "article": "monitoring"
+                    },
+                    {
+                        "name": "Supervision",
+                        "article": "monitoring",
+                        "children": [{
+                            "name": "Health Checks",
+                            "article": "monitoring",
+                            "children": [{
+                                "name": "Liveness",
+                                "article": "monitoring"
+                            }, {
+                                "name": "Readyness",
+                                "article": "monitoring"
+                            }]
+                        }]
+                    },
+                    {
+                        "name": "Metrology",
+                        "article": "monitoring",
+                        "children": [{
+                            "name": "Metrics",
+                            "article": "monitoring",
+                            "children": [{
+                                "name": "Prometheus",
+                                "article": "monitoring"
+                            },{
+                                "name": "Graphite",
+                                "article": "monitoring"
+                            }, {
+                                "name": "Zabbix",
+                                "article": "monitoring"
+                            }]
+                        }, {
+                            "name": "Tracing",
+                            "article": "monitoring",
+                            "children": [{
+                                "name": "Zipkin",
+                                "article": "monitoring"
+                            }, {
+                                "name": "Jaeger",
+                                "article": "monitoring"
+                            }, {
+                                "name": "dynatrace",
+                                "article": "monitoring"
+                            }, {
+                                "name": "AppDynamics",
+                                "article": "monitoring"
+                            }]
+                        }, {
+                            "name": "Logging",
+                            "article": "monitoring",
+                            "children": [{
+                                "name": "Splunk",
+                                "article": "monitoring"
+                            }, {
+                                "name": "FluentD",
+                                "article": "monitoring"
+                            }, {
+                                "name": "Graylog",
+                                "article": "monitoring"
+                            }]
+                        }]
+                    }
+                ]
+            },
+            {
+                "name": "Architecture",
+                "children": [
+                    {
+                        "name": "Event Oriented Architecture",
+                        "article": "event-architectures",
+                        "children": [{
+                                "name": "Patterns",
+                                "article": "event-architectures",
                                 "children": [{
-                                        "name": "Kubernetes",
-                                        "article": "test"
-                                    },
-                                    {
-                                        "name": "Docker",
-                                        "article": "test"
-                                    },
-                                    {
-                                        "name": "Istio",
-                                        "article": "test"
-                                    }
+                                    "name": "Command Query Responsibility Segregation (CQRS)",
+                                    "article": "event-architectures"
+                                },{
+                                    "name": "Event Notification",
+                                    "article": "event-architectures"
+                                }, {
+                                    "name": "Event Sourcing",
+                                    "article": "event-architectures"
+                                }, {
+                                    "name": "Event Carried State Transfer",
+                                    "article": "event-architectures"
+                                }
                                 ]
                             },
                             {
-                                "name": "Function as a service",
-                                "article": "test",
+                                "name": "Message Broker",
+                                "article": "event-architectures",
                                 "children": [{
-                                    "name": "Serverless",
-                                    "article": "test"
+                                    "name": "Kafka",
+                                    "article": "event-architectures"
+                                }, {
+                                    "name": "Amazon SQS",
+                                    "article": "event-architectures"                            
+                                },{
+                                    "name": "RabbitMQ",
+                                    "article": "event-architectures"
+                                }]
+                            }, 
+                            {
+                                "name": "Workflow",
+                                "article": "event-architectures",
+                                "children": [{
+                                    "name": "Zappier",
+                                    "article": "event-architectures"
+                                }, {
+                                    "name": "n8n",
+                                    "article": "event-architectures"
+
+                                }, {
+                                    "name": "Apache Camel",
+                                    "article": "event-architectures"
+                                }, {
+                                    "name": "jbpm", 
+                                    "article": "event-architectures"
                                 }]
                             }
                         ]
                     },
                     {
-                        "name": "Infrastructure as code",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Containers",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Continuous Integration",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Continuous Delivery",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Main line development",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Feature Flipping",
-                        "article": "test",
+                        "name": "Microservices",
+                        "article": "microservices",
                         "children": [{
-                            "name": "FF4J",
-                            "article": "test"
-                        }]
-                    },
-                    {
-                        "name": "Pipeline as code",
-                        "article": "test"
-                    }
-                ]
-            },
-            {
-                "name": "RPA",
-                "article": "test"
-            },
-            {
-                "name": "Machine Learning",
-                "article": "test"
-            },
-            {
-                "name": "Supervision",
-                "article": "test",
-                "children": [{
-                        "name": "Tracing",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Monitoring",
-                        "article": "test"
-                    }
-                ]
-            },
-            {
-                "name": "MicroServices",
-                "article": "test",
-                "children": [{
-                        "name": "Resource-Oriented Architecture",
-                        "article": "test"
-                    },
-                    {
-                        "name": "Service Discovery",
-                        "article": "test",
-                        "children": [{
+                            "name": "Service Discovery",
+                            "article": "microservices",
+                            "children": [{
                                 "name": "Consul",
-                                "article": "test"
+                                "article": "microservices"
+                            }]
+                        }, {
+                            "name": "Design for failure",
+                            "article": "microservices",
+                            "children" : [{
+                                "name": "Circuit breaker",
+                                "article": "microservices"
+                            }, {
+                                "name": "Feature flags",
+                                "article": "microservices"
+                            }]
+                        }, {
+                            "name": "Secret Management",
+                            "article": "microservices",
+                            "children": [{
+                                "name": "Vault",
+                                "article": "microservices"
+                            }, {
+                                "name": "AWS Secret manager",
+                                "article": "microservices"
+                            }, {
+                                "name": "Azure Key Vault",
+                                "article": "microservices"
+                            }, {
+                                "name": "Docker Secrets",
+                                "article": "microservices"
+                            }]
+                        }]
+                    }
+                ]
+            },
+            {
+                "name": "Infrastructure",
+                "article": "infrastructure",
+                "children": [
+                    {
+                        "name": "Provisionning",
+                        "article": "infrastructure",
+                        "children": [{
+                                "name": "AWS",
+                                "article": "infrastructure"
                             },
                             {
-                                "name": "Traefik",
-                                "article": "test"
+                                "name": "Google Cloud Platform",
+                                "article": "infrastructure"
                             },
                             {
-                                "name": "Registrator",
-                                "article": "test"
+                                "name": "Azure",
+                                "article": "infrastructure"
+                            },
+                            {
+                                "name": "OVH",
+                                "article": "infrastructure"
+                            },
+                            {
+                                "name": "CleverCloud",
+                                "article": "infrastructure"
                             }
                         ]
                     },
                     {
-                        "name": "Circuit breaker",
-                        "article": "test"
+                        "name": "Infrastructure As A Service",
+                        "article": "infrastructure"
+                    }, {
+                        "name": "Platform As A Service",
+                        "article": "infrastructure",
+                        "children": [{
+                            "name": "Google App Engine",
+                            "article": "infrastructure"
+                        }, {
+                            "name": "Salesforce (Force.com)",
+                            "article": "infrastructure"
+                        }, {
+                            "name": "CloudFoundry Pivotal",
+                            "article": "infrastructure"
+                        }, {
+                            "name": "IBM Bluemix",
+                            "article": "infrastructure"
+                        }]
+                    }, {
+                        "name": "Container As A Service",
+                        "article": "infrastructure", 
+                        "children": [{
+                            "name": "Docker",
+                            "article": "infrastructure"
+                        }, {
+                            "name": "Kubernetes",
+                            "article": "infrastructure"
+                        }, {
+                            "name": "Istio",
+                            "article": "infrastructure"
+                        }]
                     }
                 ]
+            },
+            {
+                "name": "Frontend",
+                "article": "frontend",
+                "children": [{
+                    "name": "Mobile Native",
+                    "article": "frontend",
+                    "children": [{
+                        "name": "Android",
+                        "article": "frontend"
+                    }, {
+                        "name": "iOS",
+                        "article": "frontend"
+                    }]
+                }, {
+                    "name": "Mobile Hybrid",
+                    "article": "frontend",
+                    "children": [{
+                        "name": "Ionic",
+                        "article": "frontend"
+                    }, {
+                        "name": "Flutter",
+                        "article": "frontend"
+                    }, {
+                        "name": "React Native",
+                        "article": "frontend"
+                    }, {
+                        "name": "PhoneGap",
+                        "article": "frontend"
+                    }, {
+                        "name": "Framework 7",
+                        "article": "frontend"
+                    }]
+                }, {
+                    "name": "Framework JS",
+                    "article": "frontend",
+                    "children": [{
+                        "name": "Angular",
+                        "article": "frontend"
+                    }, {
+                        "name": "ReactJS",
+                        "article": "frontend"
+                    }, {
+                        "name": "VueJS",
+                        "article": "frontend"
+                    }]
+                }, {
+                    "name": "Packaging",
+                    "article": "frontend",
+                    "children": [{
+                        "name": "NPM",
+                        "article": "frontend"
+                    }, {
+                        "name": "Gulp",
+                        "article": "frontend"
+                    }, {
+                        "name": "Webpack",
+                        "article": "frontend"
+                    }, {
+                        "name": "Babel",
+                        "article": "frontend"
+                    }, {
+                        "name": "Bower",
+                        "article": "frontend"
+                    }, {
+                        "name": "Yarn",
+                        "article": "frontend"
+                    }]
+                }, {
+                    "name": "Responsive",
+                    "article": "frontend",
+                    "children": [{
+                        "name": "Boostrap",
+                        "article": "frontend"
+                    }, {
+                        "name": "Angular Material",
+                        "article": "frontend"
+                    }, {
+                        "name": "Vuetify",
+                        "article": "frontend"
+                    }]
+                }]
             }
         ]
     }
