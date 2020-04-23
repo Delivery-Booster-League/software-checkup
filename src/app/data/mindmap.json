@@ -225,14 +225,27 @@
                         "name": "Automated Testing",
                         "article": "devops",
                         "children": [{
-                            "name": "Performance Test",
-                            "article": "devops"
-                        }, {
-                            "name": "Stress Test", 
-                            "article": "devops"
-                        },{
-                            "name": "Load Test", 
-                            "article": "devops"
+                            "name": "Load Tests", 
+                            "article": "devops",
+                            "children": [{
+                                "name": "JMeter",
+                                "article": "devops"
+                            }, {
+                                "name": "Gatling",
+                                "article": "devops"
+                            }, {
+                                "name": "LoadRunner",
+                                "article": "devops"
+                            }, {
+                                "name": "Apache Bench",
+                                "article": "devops"
+                            }, {
+                                "name": "Siege",
+                                "article": "devops"
+                            }, {
+                                "name": "The Grinder",
+                                "article": "devops"
+                            }]
                         }, {
                             "name": "GUI Tests", 
                             "article": "devops",
