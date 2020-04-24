@@ -29,7 +29,7 @@
                 }]
             },
             {
-                "name": "Automation",
+                "name": "Automation & Data",
                 "article": "automation",
                 "children": [{
                         "name": "Machine Learning",
@@ -458,6 +458,13 @@
                                 "name": "Docker Secrets",
                                 "article": "microservices"
                             }]
+                        }]
+                    }, {
+                        "name": "API",
+                        "article": "api",
+                        "children": [{
+                            "name": "Patterns",
+                            "article": "api"
                         }]
                     }
                 ]
