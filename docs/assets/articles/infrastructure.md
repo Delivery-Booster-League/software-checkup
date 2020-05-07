@@ -13,5 +13,5 @@
 - [Networking](mind-map/networking)
 
 ## Liens
-[Infrastructure As Code versuss GitOps](https://croz.net/news/infrastructure-as-code-vs-gitops/)
-[Kafka sur OpenShift](https://strimzi.io/2019/04/30/accessing-kafka-part-3.html)
+- [Infrastructure As Code versuss GitOps](https://croz.net/news/infrastructure-as-code-vs-gitops/)
+- [Kafka sur OpenShift](https://strimzi.io/2019/04/30/accessing-kafka-part-3.html)
