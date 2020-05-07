@@ -164,121 +164,128 @@
                 ]
             },
             {
-                "name": "DevOps",
-                "article": "devops",
+                "name": "devsecops",
+                "article": "devsecops",
                 "children": [{
                         "name": "Continuous Delivery",
-                        "article": "devops",
+                        "article": "devsecops",
                         "children": [{
                             "name": "Pipeline as code",
-                            "article": "devops"
+                            "article": "devsecops"
                             }, {
                             "name": "Continuous Integration",
-                            "article": "devops",
+                            "article": "devsecops",
                             "children": [{
                                 "name": "Concourse",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "Gitlab-ci",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "Jenkins",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "ArgoCD",
-                                "article": "devops"
+                                "article": "devsecops"
                             }]
                         }, {
                             "name": "Source control",
-                            "article": "devops",
+                            "article": "devsecops",
                             "children": [{
                                 "name": "Git Ops",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "Release Management",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "Git Flow",
-                                "article": "devops"
+                                "article": "devsecops"
                             }]
                         }, {
                             "name": "Canary Release",
-                            "article": "devops"
+                            "article": "devsecops"
                         }, {
                             "name": "BlueGreen Deployment",
-                            "article": "devops"
+                            "article": "devsecops"
                         }, {
                             "name": "Infrastructure as code",
-                            "article": "devops",
+                            "article": "devsecops",
                             "children": [{
                                 "name": "Pulumi",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "Terraform",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "CloudFormation",
-                                "article": "devops"
+                                "article": "devsecops"
                             }]
                         }]
                     }, {
                         "name": "Automated Testing",
-                        "article": "devops",
+                        "article": "devsecops",
                         "children": [{
                             "name": "Load Tests", 
-                            "article": "devops",
+                            "article": "devsecops",
                             "children": [{
                                 "name": "JMeter",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "Gatling",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "LoadRunner",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "Apache Bench",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "Siege",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "The Grinder",
-                                "article": "devops"
+                                "article": "devsecops"
                             }]
                         }, {
                             "name": "GUI Tests", 
-                            "article": "devops",
+                            "article": "devsecops",
                             "children": [{
                                 "name": "Selenium webdriver",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "Cypress.io",
-                                "article": "devops"
+                                "article": "devsecops"
                             }]
                         }, {
                             "name": "SOA / ROA Testing", 
-                            "article": "devops",
+                            "article": "devsecops",
                             "children": [{
                                 "name": "SoapUI",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "JMeter",
-                                "article": "devops"
+                                "article": "devsecops"
                             }, {
                                 "name": "KarateJS",
-                                "article": "devops"
+                                "article": "devsecops"
                             }]
                         }, {
                             "name": "AB Testing", 
-                            "article": "devops"
+                            "article": "devsecops"
                         }, {
                             "name": "Chaos Engineering", 
-                            "article": "devops", 
+                            "article": "chaos-engineering", 
                             "children": [{
                                 "name": "Monkey Testing",
-                                "article": "devops"
+                                "article": "chaos-engineering"
                             }]
+                        }]
+                    }, {
+                        "name": "Sécurité",
+                        "article": "securite",
+                        "children": [{
+                            "name": "Détection d'intrusions",
+                            "article": "securite"
                         }]
                     }
                 ]
@@ -447,7 +454,7 @@
                             "article": "microservices",
                             "children": [{
                                 "name": "Vault",
-                                "article": "microservices"
+                                "article": "vault"
                             }, {
                                 "name": "AWS Secret manager",
                                 "article": "microservices"
@@ -464,7 +471,17 @@
                         "article": "api",
                         "children": [{
                             "name": "Patterns",
-                            "article": "api"
+                            "article": "api",
+                            "children": [{
+                                "name": "stateless",
+                                "article": "api"
+                            }, {
+                                "name": "low latency",
+                                "article": "api"
+                            }, {
+                                "name": "",
+                                "article": ""
+                            }]
                         }]
                     }
                 ]
@@ -475,26 +492,43 @@
                 "children": [
                     {
                         "name": "Provisionning",
-                        "article": "infrastructure",
+                        "article": "cloud",
                         "children": [{
                                 "name": "AWS",
-                                "article": "infrastructure"
+                                "article": "cloud",
+                                "children": [{
+                                    "name": "Amazon ECR",
+                                    "article": "cloud"
+                                },
+                                {
+                                    "name": "Amazon RDS",
+                                    "article": "cloud"
+                                },
+                                {
+                                    "name": "Amazon Beanstalk",
+                                    "article": "cloud"
+                                }, 
+                                {
+                                    "name": "Amazon ECS",
+                                    "article": "cloud"
+                                }
+                                ]
                             },
                             {
                                 "name": "Google Cloud Platform",
-                                "article": "infrastructure"
+                                "article": "cloud"
                             },
                             {
                                 "name": "Azure",
-                                "article": "infrastructure"
+                                "article": "cloud"
                             },
                             {
                                 "name": "OVH",
-                                "article": "infrastructure"
+                                "article": "cloud"
                             },
                             {
                                 "name": "CleverCloud",
-                                "article": "infrastructure"
+                                "article": "cloud"
                             }
                         ]
                     },
@@ -522,13 +556,23 @@
                         "article": "infrastructure", 
                         "children": [{
                             "name": "Docker",
-                            "article": "infrastructure"
+                            "article": "docker"
                         }, {
                             "name": "Kubernetes",
-                            "article": "infrastructure"
+                            "article": "kubernetes"
                         }, {
                             "name": "Istio",
                             "article": "infrastructure"
+                        }]
+                    }, {
+                        "name": "Networking",
+                        "article": "networking",
+                        "children": [{
+                            "name": "Service Mesh",
+                            "article": "networking"
+                        }, {
+                            "name": "Reverse Proxy",
+                            "article": "networking"
                         }]
                     }
                 ]
@@ -613,6 +657,20 @@
                         "name": "Vuetify",
                         "article": "frontend"
                     }]
+                }]
+            }, {
+                "name": "Backend",
+                "article": "backend",
+                "children": [{
+                    "name": "Ecosystèmes",
+                    "article": "backend",
+                    "children": [{
+                        "name": "Java",
+                        "article": "java"
+                    }]
+                }, {
+                    "name": "Microsoft .Net",
+                    "article": "backend"
                 }]
             }
         ]
