@@ -4,11 +4,22 @@
 }
 
 .content {
-    margin: 32px auto;
-    padding: 0 16px;
-    max-width: 960px;
+  text-align:center;
+  display:block;
+  margin: 32px auto;
+  padding: 0 16px;
+  max-width: 960px;
 }
 
+
+@media (max-width: 600px) {
+  .content {
+    width: 95%;
+    overflow:scroll;
+    margin:0;
+    padding:0;
+  }
+}
 
 .animated {
     animation: animation-name .3s ease-out forwards;
