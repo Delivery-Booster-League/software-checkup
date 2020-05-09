@@ -1,62 +1,10 @@
+
+.scrollDisabled {
+    overflow: hidden;
+}
+
 .content {
     margin: 32px auto;
     padding: 0 16px;
     max-width: 960px;
-}
-
-h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 40px;
-    font-weight: 300;
-    letter-spacing: -0.5px;
-}
-
-#chart {
-    height: 932px;
-    width: 932px;
-}
-
-.node {
-    cursor: pointer;
-}
-
-.overlay {
-    background-color: #EEE;
-}
-
-.node circle {
-    fill: #fff;
-    stroke: steelblue;
-    stroke-width: 1.5px;
-}
-
-.node text {
-    font-size: 12px;
-}
-
-.link {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1.5px;
-}
-
-.templink {
-    fill: none;
-    stroke: red;
-    stroke-width: 3px;
-}
-
-.ghostCircle.show {
-    display: block;
-}
-
-.ghostCircle,
-.activeDrag .ghostCircle {
-    display: none;
-}
-
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
