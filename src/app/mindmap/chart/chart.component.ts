@@ -109,7 +109,15 @@ export class ChartComponent implements OnChanges, AfterViewInit  {
         } else{
           focus !== selectedNode && (zoom(selectedNode), d3.event.stopPropagation())
         }
-      });
+      }).on("wheel", function(nodeSelected :any){
+        const scrollDirection = d3.event.wheelDelta < 0 ? 'down' : 'up';
+        if ('down' === scrollDirection && focus.parent){
+          zoom(focus.parent);
+        } else if ('up' === scrollDirection) {
+          const nodeToZoom = nodeSelected.children ? nodeSelected : nodeSelected.parent;
+          zoom(nodeToZoom);
+        }
+     });;
 
   const label :any = svg.append("g")
       .style("font", "20px sans-serif")
