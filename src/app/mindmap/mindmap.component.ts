@@ -1,7 +1,5 @@
 import { Component, Renderer2,  ViewEncapsulation } from '@angular/core';
 
-import * as d3 from 'd3';
-
 @Component({
   selector: 'app-mindmap',
   encapsulation: ViewEncapsulation.None,
@@ -10,9 +8,8 @@ import * as d3 from 'd3';
 })
 
 export class MindmapComponent {
-
-  isPostOpened : Boolean;
-  postIdToOpen : string;
+  isPostOpened: boolean;
+  postIdToOpen: string;
 
   constructor(private renderer: Renderer2) {}
 
@@ -32,5 +29,4 @@ export class MindmapComponent {
   activateBodyScrolling = () => {
     this.renderer.removeClass(document.body, 'scrollDisabled');
   }
-
 }

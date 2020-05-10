@@ -1,6 +1,5 @@
 import { Component, OnInit, Input , Output, EventEmitter} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Subscription } from 'rxjs'
 import { ViewEncapsulation } from '@angular/core';
 import { Location } from '@angular/common';
 
@@ -13,11 +12,11 @@ import { Location } from '@angular/common';
 
 export class ArticleComponent  implements OnInit{
 
-  @Input() postId : string;
+  @Input() postId: string;
   @Output() closedArticle = new EventEmitter<void>();
 
   post: string;
-  paramPostId : string; 
+  paramPostId: string;
 
   constructor(private route: ActivatedRoute, private location: Location) {}
 
@@ -32,7 +31,7 @@ export class ArticleComponent  implements OnInit{
   closeArticle = () => {
     if (this.paramPostId) {
       this.location.back();
-    } 
-    this.closedArticle.emit()
+    }
+    this.closedArticle.emit();
   }
 }
