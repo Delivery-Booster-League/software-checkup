@@ -66,3 +66,8 @@
         font-size: 15px;
     }
 }
+
+
+.mat-toolbar-row{
+    height:50px;
+}

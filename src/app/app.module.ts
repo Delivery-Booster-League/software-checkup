@@ -27,7 +27,8 @@ import { MindmapComponent } from './mindmap/mindmap.component';
 
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient } from '@angular/common/http';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { ChartComponent } from './mindmap/chart/chart.component'; 
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     CheckListsComponent,
     LandingComponent,
     MindmapComponent,
-    ArticleComponent
+    ArticleComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
