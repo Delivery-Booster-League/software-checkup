@@ -1,5 +1,12 @@
-
-<h1>Cartographie du Modern Delivery (WIP)</h1>
+<h1>
+    Cartographie du Modern Delivery (WIP)</h1>
 <mat-card>
-    <div #chart id="chart" class="container" (window:resize)="onResize()"></div>
+    <mat-tab-group>
+        <mat-tab label="Mindmap">
+            <div #chart id="chart" class="container" (window:resize)="onResize()" (mouseover)="disableBodyScrolling()" (mouseleave)="activateBodyScrolling()"></div>
+        </mat-tab>
+        <mat-tab label="Sommaire">
+            <app-sommaire [data]="data" (articleComponentOpened)="openArticleComponent($event)"></app-sommaire>
+        </mat-tab>
+    </mat-tab-group>
 </mat-card>

@@ -15,6 +15,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatTreeModule} from '@angular/material/tree';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
@@ -29,6 +30,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { ChartComponent } from './mindmap/chart/chart.component'; 
+import { SommaireComponent } from './mindmap/chart/sommaire/sommaire.component';
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import { ChartComponent } from './mindmap/chart/chart.component';
     LandingComponent,
     MindmapComponent,
     ArticleComponent,
-    ChartComponent
+    ChartComponent,
+    SommaireComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ import { ChartComponent } from './mindmap/chart/chart.component';
     MatSelectModule,
     MatListModule,
     MatTooltipModule,
+    MatTreeModule,
     AppRoutingModule,
     HttpClientModule,
     NgxLinkifyjsModule.forRoot({

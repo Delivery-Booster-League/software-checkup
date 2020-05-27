@@ -1,11 +1,4 @@
-<app-chart
-    class="animated content" role="main" 
-    [style.display] = "isPostOpened ? 'none' : 'block'"  
-    (articleComponentOpened) = "openArticleComponent($event)" 
-    (mouseover)="disableBodyScrolling()" (mouseleave)="activateBodyScrolling()">
+<app-chart class="animated content" role="main" [style.display]="isPostOpened ? 'none' : 'block'" (articleComponentOpened)="openArticleComponent($event)">
 </app-chart>
-<app-article 
-    *ngIf="isPostOpened && postIdToOpen"
-    [postId] = "postIdToOpen"  
-    (closedArticle) = "closeArticleComponent()"> 
+<app-article *ngIf="isPostOpened && postIdToOpen" [postId]="postIdToOpen" (closedArticle)="closeArticleComponent()">
 </app-article>

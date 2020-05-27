@@ -1,4 +1,4 @@
-import { Component, ElementRef, Output, OnChanges, ViewChild, EventEmitter, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, Output, OnChanges, ViewChild, EventEmitter, AfterViewInit,Renderer2 } from '@angular/core';
 import { MindmapService } from '../../service/mindmap.service';
 import { Router } from '@angular/router';
 import * as d3 from 'd3';
@@ -37,7 +37,7 @@ export class ChartComponent implements OnChanges, AfterViewInit {
     this.createChart('default');
   }
 
-  constructor(private mindmapService: MindmapService, private router: Router) { }
+  constructor(private mindmapService: MindmapService, private router: Router, private renderer: Renderer2) { }
 
   ngOnChanges = () => {
     if (!this.data) { return; }
@@ -140,13 +140,17 @@ export class ChartComponent implements OnChanges, AfterViewInit {
   manageClickEvent = (selectedNode: Node) => {
     if (!selectedNode.data.children && this.focusedNode === selectedNode.parent) {
       if (!this.isZooming) {
-        this.articleComponentOpened.emit(selectedNode.data.article);
+        this.openArticleComponent(selectedNode.data.article);
       }
     } else if (!selectedNode.data.children || selectedNode === this.focusedNode) {
       this.zoom(selectedNode.parent);
     } else {
       this.zoom(selectedNode);
     }
+  }
+  openArticleComponent(article:any){
+    this.articleComponentOpened.emit(article);
+
   }
 
   /**
@@ -217,6 +221,14 @@ export class ChartComponent implements OnChanges, AfterViewInit {
 
   closeAllNode() {
     this.createChart('closeAll');
+  }
+
+  disableBodyScrolling = () => {
+    this.renderer.addClass(document.body, 'scrollDisabled');
+  }
+
+  activateBodyScrolling = () => {
+    this.renderer.removeClass(document.body, 'scrollDisabled');
   }
 
 }

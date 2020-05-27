@@ -11,7 +11,7 @@ export class MindmapComponent {
   isPostOpened: boolean;
   postIdToOpen: string;
 
-  constructor(private renderer: Renderer2) {}
+  constructor() {}
 
   openArticleComponent = (postId: string) => {
     this.isPostOpened = true;
@@ -20,13 +20,5 @@ export class MindmapComponent {
 
   closeArticleComponent = () => {
     this.isPostOpened = false;
-  }
-
-  disableBodyScrolling = () => {
-    this.renderer.addClass(document.body, 'scrollDisabled');
-  }
-
-  activateBodyScrolling = () => {
-    this.renderer.removeClass(document.body, 'scrollDisabled');
   }
 }
