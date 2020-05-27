@@ -52,7 +52,7 @@ export class ChartComponent implements OnChanges, AfterViewInit {
     d3.select('svg').remove();
 
     const element = this.chartContainer.nativeElement;
-    const color = ['#64bebf', '#3dacad', '#008182', '#006d6d', '#006566'];
+    const color = ['#64bebf', '#3dacad', '#008182', '#006d6d', '#006566', '#005455', '#004443', '#003332'];
     const isFirefox = (/Firefox/i.test(navigator.userAgent));
     const scrollEvent = isFirefox ? 'DOMMouseScroll' : 'mousewheel';
     let root: Node;
