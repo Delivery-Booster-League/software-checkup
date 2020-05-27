@@ -159,7 +159,7 @@ export class ChartComponent implements OnChanges, AfterViewInit {
   zoom = (focusedNode: Node) => {
     this.focusedNode = focusedNode;
     const transition = this.drawedChart.transition()
-      .duration(d3.event.altKey ? 7500 : 750)
+      .duration(d3.event.altKey ? 7500 : 1800)
       .on('end', () => { this.isZooming = false; })
       .on('start', () => { this.isZooming = true; })
       .tween('zoom', () => {
