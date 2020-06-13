@@ -9,3 +9,4 @@ Les architectures orientées évènements permettent de gérer des flux d'évèn
 - [Kafka Openshift](https://strimzi.io/2019/04/30/accessing-kafka-part-3.html)
 - [Event Notification vs Event-Carried State Transfer](https://medium.com/swlh/event-notification-vs-event-carried-state-transfer-2e4fdf8f6662)
 - [Zapier OSS Alternative](https://n8n.io/)
+- [Kafka - Who ? Why ? How](https://practicalprogramming.fr/apache-kafka)
