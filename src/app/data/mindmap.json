@@ -367,7 +367,14 @@
                                 "name": "Graylog",
                                 "article": "monitoring"
                             }]
-                        }]
+                        }, {
+							"name": "Observability",
+							"article": "monitoring"
+							"children": [{
+								"name": "Kiali",
+								"article": "monitoring"
+							}]
+						}]
                     }
                 ]
             },
