@@ -86,7 +86,7 @@
                     "libelle": "[Méthode] Une méthode n'implémente pas un comportent déjà implémenté ailleurs dans l'application",
                     "desc": "DRY (Don't Repeat yourself). Eviter les duplications de code."
                 },
-                ,
+            
                 {
                     "libelle": "[Méthode] Toutes les données configurables sont externalisées",
                     "desc": "Toute information susceptible de changer dans le temps ou en fonction de l'environnement doit être externalisé dans un fichier, en base ou dans un système clé/valeur (Consul) pour ne pas avoir à modifier et recompiler le code à chaque modification."
