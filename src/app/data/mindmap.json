@@ -369,7 +369,7 @@
                             }]
                         }, {
 							"name": "Observability",
-							"article": "monitoring"
+							"article": "monitoring",
 							"children": [{
 								"name": "Kiali",
 								"article": "monitoring"
