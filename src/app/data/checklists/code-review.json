@@ -1,0 +1,151 @@
+{
+    "title": "Revues de code",
+    "subparts": [{
+        "name": "Java",
+
+        "iswip": true,
+        "author": "GORTAIS, Gwendal",
+        "steps": [{
+                "libelle": "[Nommage] Les noms de classes / variables appartiennent aux groupes nominaux",
+                "desc": "Les noms de classes / variables représentent un objet en particulier et ne doivent pas être trop génériques"
+            },
+            {
+                "libelle": "[Nommage] Les noms de méthodes appartiennent aux groupes verbaux",
+                "desc": "Les méthodes représentent des actions."
+            },
+            {
+                "libelle": "[Nommage] Les variables ou méthodes booléennes ont une forme interrogative",
+                "desc": "Les variables de type booléen ou les méthodes qui renvoient un booléen répondent à une question."
+            },
+            {
+                "libelle": "[Nommage] Les propriétés d'énumérateurs sont des adjectifs",
+                "desc": "Les énumérateurs référencent des états. Ex: Red, Small, Pending..."
+            },
+            {
+                "libelle": "[Nommage] Les noms d'évènements sont déclinés au passé",
+                "desc": "Les évènements sont des actions passées. Ex: statusChanged, serverStarted..."
+            },
+            {
+                "libelle": "[Méthode] Les méthodes sont correctement indentées et aérées",
+                "desc": "Partager les mêmes formats de développement au sein de l'équipe. Ex : Plugin EditorConfig."
+            },
+            {
+                "libelle": "[Méthode] Les méthodes n'acceptent pas plus de X paramètres",
+                "desc": "Si le nombre de paramètres dépassent X, il faut remettre en question la méthode. Il est possible d'utiliser un objet, avec un nom parlant, pour porter un ensemble cohérent de paramètre. \n Exception : Lorsque la signature d'une méthode est imposée par un framework ou une librairie externe, il est possible de mettre en place une couche de mapping."
+            },
+            {
+                "libelle": "[Méthode] Les méthodes ne retournent jamais 'null'",
+                "desc": "Cela évite aux appelants de se prémunir contre les NullPointerException. N.B. : Renvoyer un objet / une liste vide ou utiliser le concept Option fourni depuis Java 8."
+            },
+            {
+                "libelle": "[Méthode] Les méthodes ne font qu'une seule action",
+                "desc": "Si le nom de méthode contient 'et', 'ou', 'avec', 'ainsi'... C'est qu'elle fait plusieurs actions. Cela augmente inutilement le complexité de la méthode, la rendant moins lisible et moins maintenable."
+            },
+            {
+                "libelle": "[Méthode] Aucune méthode n'est appelée avec la valeur null passée en paramètre",
+                "desc": "S'il est nécessaire de passer la valeur null à une méthode, c'est qu'elle fait plusieurs actions en fonction de la valeur du paramètre, une lorsque la valeur est nulle et une autre dans le cas contraire. Il est donc nécessaire de rentrer dans la méthode pour comprendre quel comportement est implémenté en fonction de la valeur des paramètres. Il est préférable de créer deux méthodes distinctes pour augmenter la lisibilité, la maintenabilité et la testabilité du code."
+            },
+            {
+                "libelle": "[Méthode] Aucune méthode n'accepte de valeur booléenne en paramètre",
+                "desc": "Sauf exception de l'état d'un objet, s'il est nécessaire de passer une valeur booléenne à une méthode, c'est qu'elle fait plusieurs actions, une si la valeur est vraie et une autre dans le cas contraire. Il est préférable de créer deux méthodes distinctes (cf. ci-dessus)."
+            },
+            {
+                "libelle": "[Méthode] Le code ne contient pas de 'magic numbers' ou de valeurs en dur",
+                "desc": "https://fr.wikipedia.org/wiki/Nombre_magique_(programmation). Préférer l'utilisation de constantes."
+            },
+            {
+                "libelle": "[Méthode] Les étapes et le résultat d'exécution de la méthode sont correctement tracés",
+                "desc": "Les niveaux de trace doivent être définis collégialement avec l'équipe. Pour rappel, les traces permettent d'observer la bonne exécution de la méthode, et de diagnostiquer et débogger en cas d'erreur."
+            },
+            {
+                "libelle": "[Méthode] Toutes les méthodes publiques sont testées",
+                "desc": "Toutes les méthodes publiques contenant de la logique métier doivent être testées."
+            },
+            {
+                "libelle": "[Méthode] Les méthodes respectent la loi 'Demeter' ou 'Principe de Connaissance Minimale'",
+                "desc": "Chaque méthode a uniquement connaissance de ses objets voisins pour avoir un code plus maintenable."
+            },
+            {
+                "libelle": "[Méthode] Une méthode n'implémente pas un comportent déjà implémenté ailleurs dans l'application",
+                "desc": "DRY (Don't Repeat yourself). Eviter les duplications de code."
+            },
+            {
+                "libelle": "[Méthode] Aucune méthode ne contient de switch (ou plusieurs séquences de 'if') non isolé dans le code",
+                "desc": "Utiliser les possibilités offertes par la POO et le polymorphisme"
+            },
+            {
+                "libelle": "[Méthode] Tous les paramètres des méthodes sont déclarés 'final'",
+                "desc": "Les méthodes ne doivent pas modifier les paramètres entrants, au risque de réduire la lisibilité et la maintenabilité du code."
+            },
+            {
+                "libelle": "[Méthode] Les méthodes ont une seule entrée et une seule sortie",
+                "desc": "Stocker le résultat de la méthode dans une variable avec retour à la fin. Exception: Sauf si le retour aide à la compréhension de la méthode ou à sortir au plus tôt de la méthode (vérification des paramètres)."
+            },
+            {
+                "libelle": "[Méthode] Une méthode n'implémente pas un comportent déjà implémenté ailleurs dans l'application",
+                "desc": "DRY (Don't Repeat yourself). Eviter les duplications de code."
+            },
+
+            {
+                "libelle": "[Méthode] Toutes les données configurables sont externalisées",
+                "desc": "Toute information susceptible de changer dans le temps ou en fonction de l'environnement doit être externalisé dans un fichier, en base ou dans un système clé/valeur (Consul) pour ne pas avoir à modifier et recompiler le code à chaque modification."
+            },
+            {
+                "libelle": "[Condition] Préférer une condition positive à une condition négative",
+                "desc": "Ex: if (isNotLate) vs if (!isLate)"
+            },
+            {
+                "libelle": "[Conditon] Les conditions complexes sont isolées dans une méthode",
+                "desc": "Isoler une condition complexe dans une méthode permet d'améliorer la lisibilité, la maintenabilité et la testabilité du code."
+            },
+            {
+                "libelle": "[Classe] Les classe ont une seule responsabilité",
+                "desc": "Respect du principe SOLID, Single Responsability Principle. Préférer plusieurs classes simples à une grosse classe complexe."
+            },
+            {
+                "libelle": "[Classe] Les classes ont un couplage faible entre elles",
+                "desc": "Interroger la modélisation et la conception de la classe en cas d'imports trop nombreux."
+            },
+            {
+                "libelle": "[Trace] Les traces contiennent des informations utiles.",
+                "desc": "Ex: Chaque trace contient les informations du contexte d'exécution courant. Le niveau de trace est cohérent avec l'information tracée."
+            },
+            {
+                "libelle": "[Commentaire] Les commentaires sont utiles",
+                "desc": "Ex: Chaque trace contient les informations du contexte d'exécution courant. Le niveau de trace est cohérent avec l'information tracée."
+            },
+            {
+                "libelle": "[Test] Les tests explicitent le comportement fonctionnel attendu.",
+                "desc": "Le nom de la méthode de test permet de comprendre rapidement l'intention du test. Ex: should_throw_exception_if_person_null..."
+            },
+            {
+                "libelle": "[Test] Chaque test ne valide qu'une seule règle technique/fonctionnelle",
+                "desc": "Exception: Une validation logique peut contenir plusieurs règles."
+            },
+            {
+                "libelle": "[Test] Les tests sont indépendants (atomiques et isolés)",
+                "desc": "Les tests ne doivent pas dépendre d'une connexion, d'une date, etc."
+            },
+            {
+                "libelle": "[Test] Les tests respectent la même arborescence que le code",
+                "desc": "Permet de retrouver plus facilement la classe associée au test."
+            },
+            {
+                "libelle": "[Exception] Favoriser les exceptions métiers",
+                "desc": "Eviter les exceptions techniques pour aider à mieux comprendre le problème."
+            },
+            {
+                "libelle": "[Exception] Limiter la portée des try-catch",
+                "desc": "Afin d'améliorer les lisibilités et la maintenabilité du code"
+            },
+            {
+                "libelle": "[Exception] Préférer les exceptions personnalisées",
+                "desc": "Aux retours de codes d'erreur afin de rendre le code le plus compact et d'éviter trop de conditions"
+            },
+            {
+                "libelle": "[Exception] Préférer l'utilisation des exceptions non vérifiées",
+                "desc": "Les exceptions doivent principalement hériter de la classe RuntimeException afin de ne pas polluer le code dans les couches autres que celles où les erreurs se sont produites"
+            }
+        ]
+    }]
+}

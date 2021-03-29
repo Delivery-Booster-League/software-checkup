@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Checklist } from '../bean/checklist';
-import { CHECKLISTS } from '../data/checklists.json';
+import { CHECKLISTS } from '../data/checklists';
 
 @Injectable({
   providedIn: 'root'

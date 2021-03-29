@@ -1,9 +1,10 @@
 import { Component, OnInit, ViewChildren, QueryList } from '@angular/core';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatVerticalStepper } from '@angular/material';
 import { ChecklistService } from '../service/checklist.service';
 import { Subpart } from '../bean/subpart';
 import { Step } from '../bean/step';
+import { Checklist } from '../bean/checklist';
 
 
 @Component({
@@ -13,7 +14,7 @@ import { Step } from '../bean/step';
 })
 export class CheckListsComponent implements OnInit {
   selectedCheckListId = 0;
-  checklists = this.checklistService.getCheckLists();
+  checklists: Checklist[] = this.checklistService.getCheckLists();
   completion: number = 0;
 
   @ViewChildren(MatVerticalStepper) steppers: QueryList<MatVerticalStepper>;
@@ -30,15 +31,15 @@ export class CheckListsComponent implements OnInit {
   }
 
   openSnackBar() {
-    let snackBarRef = this._snackBar.open('All checked, nice!','dismiss',{duration: 4000  });
+    let snackBarRef = this._snackBar.open('All checked, nice!', 'dismiss', { duration: 4000 });
   }
 
   resetAllCompletion() {
-    this.steppers.forEach((stepper)=>{
+    this.steppers.forEach((stepper) => {
       stepper.reset();
     });
-    this.checklists.forEach((checklist)=>{
-      checklist.subparts.forEach((subpart)=>{
+    this.checklists.forEach((checklist) => {
+      checklist.subparts.forEach((subpart) => {
         this.resetCompletion(subpart);
       });
     });
@@ -58,7 +59,7 @@ export class CheckListsComponent implements OnInit {
 
   updateCompletion(subpart: Subpart) {
     this.completion = subpart.steps.filter(x => x.isdone).length / subpart.steps.length * 100;
-    if(subpart.steps.filter(x => x.isdone).length === subpart.steps.length){
+    if (subpart.steps.filter(x => x.isdone).length === subpart.steps.length) {
       this.openSnackBar();
     }
   }

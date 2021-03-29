@@ -1,0 +1,37 @@
+{
+    "title": "Méthodologie",
+    "subparts": [{
+        "name": "Projet",
+        "iswip": true,
+        "author": "GORTAIS, Gwendal",
+        "steps": [{
+                "libelle": "Typologie des tests (TU/TI…)",
+                "desc": "To add ngx-markdown library to your `package.json` use the following command. \n ```bash \n npm install ngx-markdown --save \n```"
+            },
+            {
+                "libelle": "Couverture de test (mesure)",
+                "desc": "To activate [Prism.js](http://prismjs.com/) syntax highlight you will need to include... \n - prism.js core library - `node_modules/prismjs/prism.js` file \n - a highlight css theme - from `node_modules/prismjs/themes` directory \n - desired code language syntax files - from `node_modules/prismjs/components` directory"
+            },
+            {
+                "libelle": "Gestion des JDD de test",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "libelle": "Documentation",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "libelle": "Partage de la connaissance",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "libelle": "TDD, BDD, Pair Programming",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "libelle": "Revue de code",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+    }]
+}
