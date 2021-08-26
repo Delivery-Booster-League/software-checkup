@@ -1,1 +1,5 @@
+name: software-checkup
+title: Software Checkup Documentation
+version: 1.0.0
+start_page: ROOT:index.adoc
 
